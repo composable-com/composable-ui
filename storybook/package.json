@@ -1,0 +1,46 @@
+{
+  "name": "storybook",
+  "packageManager": "pnpm@8.2.0",
+  "version": "0.0.0",
+  "scripts": {
+    "build_ignore": "build-storybook",
+    "lint": "eslint \"./stories/**/*.{js,ts,tsx}\" --max-warnings 0",
+    "storybook": "start-storybook -p 6006",
+    "ts": "tsc --noEmit --incremental"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/storybook-addon": "^4.0.6",
+    "@chakra-ui/theme-tools": "^2.0.16",
+    "@composable/ui": "workspace:*",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@tanstack/react-query": "^4.22.0",
+    "@tanstack/react-query-devtools": "^4.22.0",
+    "framer-motion": "^7.1.0",
+    "next-seo": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.34.2",
+    "react-icons": "^4.4.0",
+    "react-intl": "^5.21.1",
+    "storybook-addon-next": "^1.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}

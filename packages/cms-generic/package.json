@@ -1,0 +1,20 @@
+{
+  "name": "@composable/cms-generic",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "sideEffects": "false",
+  "scripts": {
+    "build": "echo \"Build script for @composable/cms-generic ...\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
+    "ts": "tsc --noEmit --incremental"
+  },
+  "dependencies": {
+    "@composable/types": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.5"
+  }
+}

@@ -1,0 +1,330 @@
+[
+  {
+    "__typename": "Page",
+    "slug": "home",
+    "metaTitle": "home",
+    "metaDescription": "home",
+    "metaKeywords": ["home", "meta", "keywords"],
+    "id": "c7e20a18-f0ac-438a-a3e5-da9931af21a8",
+    "items": [
+      {
+        "__typename": "BannerSplit",
+        "containerMarginBottom": "12",
+        "containerMarginTop": "6",
+        "containerSize": null,
+        "content": "Create impactful, online storefronts with a foundational React and Next.js design system and UI library for modern composable commerce websites.",
+        "ctaAlphaHref": "",
+        "ctaAlphaLabel": "Get Started",
+        "eyebrow": null,
+        "id": "70b70528-7595-412a-be3d-45ff3ac99416",
+        "imageDesktop": {
+          "url": "/img/cms/home/composable-ui-banner.png",
+          "title": "",
+          "description": "",
+          "minHeight": "800px"
+        },
+        "imageMobile": {
+          "url": "/img/cms/home/composable-ui-banner-mobile.png",
+          "title": "provident",
+          "description": "minus"
+        },
+        "inverted": true,
+        "isFullScreen": false,
+        "isLazy": false,
+        "title": "Composable UI Open Source Storefront"
+      },
+      {
+        "__typename": "Grid",
+        "columns": 3,
+        "containerMarginBottom": 5,
+        "containerMarginTop": 5,
+        "containerSize": "full",
+        "gridGap": 5,
+        "id": "91109843-dc5f-44d0-bb33-f0c96102a4c8",
+        "items": [
+          {
+            "__typename": "TextCard",
+            "id": "6fa578ae-5780-4eb7-a3f1-43f0dd1871c6",
+            "title": "Github",
+            "image": {
+              "url": "/img/cms/icons/github.png",
+              "title": "Github",
+              "description": "Github icon"
+            },
+            "content": "Using React with Next.js provides a seamless solution for server-side rendering (SSR) that enhances the user experience and improves performance. ",
+            "theme": "highlight",
+            "textAlign": "center"
+          },
+          {
+            "__typename": "TextCard",
+            "id": "4a6b9484-b083-48dd-8c84-b984974cb648",
+            "title": "Technical Documentation",
+            "image": {
+              "url": "/img/cms/icons/technical-documentation.png",
+              "title": "Technical Documentation",
+              "description": "Technical Documentation icon"
+            },
+            "content": "Developers can spend more time building and less time searching for answers to common questions.",
+            "theme": "highlight",
+            "textAlign": "center"
+          },
+          {
+            "__typename": "TextCard",
+            "id": "7323f4da-97af-4b2e-8b94-6b4f15650035",
+            "title": "Figma Design Kit",
+            "image": {
+              "url": "/img/cms/icons/figma-design-kit.png",
+              "title": "Figma Design Kit",
+              "description": "Figma Design Kit icon"
+            },
+            "content": "Our Figma design kit provides a comprehensive set of UI components, layouts, and icons that enable designers to create stunning, cohesive designs quickly and easily.",
+            "theme": "highlight",
+            "textAlign": "center"
+          }
+        ]
+      },
+      {
+        "__typename": "BannerTextOnly",
+        "centered": true,
+        "containerMarginBottom": "-12",
+        "containerMarginTop": "",
+        "containerSize": "",
+        "content": "Spin it up, extend it, make it your own. Composable UI Storefront is the fastest and easiest way for architects and developers to learn the best patterns for delivering composable commerce experiences.",
+        "ctaAlphaHref": "",
+        "ctaAlphaLabel": "",
+        "eyebrow": "",
+        "id": "f9601b9e-f3bf-443e-a761-293fde108071",
+        "title": "Composable UI Features"
+      },
+      {
+        "__typename": "Grid",
+        "columns": 5,
+        "containerMarginBottom": "24",
+        "containerMarginTop": "",
+        "containerSize": "xl",
+        "gridGap": 5,
+        "id": "b8183d37-a5cb-44da-8500-f176f2ece907",
+        "items": [
+          {
+            "__typename": "TextCard",
+            "title": "Composable Design System",
+            "image": {
+              "url": "/img/cms/icons/composable-design-system.png",
+              "title": "harum",
+              "description": "libero"
+            },
+            "content": "A comprehensive design system including Storybook for building and testing and Figma for a full set of components and layouts.",
+            "ctaLabel": "",
+            "ctaHref": "",
+            "id": "b52b950a-7be2-4d3e-8e73-a5df76c670ad",
+            "theme": "light",
+            "textAlign": "left"
+          },
+          {
+            "__typename": "TextCard",
+            "content": "Next.js framework using React to give you the best developer experience with all the features you need for production.",
+            "ctaHref": "",
+            "ctaLabel": "",
+            "id": "61bb5ba2-79c5-4d97-8f26-3b18e29528e0",
+            "image": {
+              "url": "/img/cms/icons/architectural-patterns.png",
+              "title": "harum",
+              "description": "libero"
+            },
+            "textAlign": "left",
+            "theme": "light",
+            "title": "Composable Architectural Patterns"
+          },
+          {
+            "__typename": "TextCard",
+            "content": "Composable UI can be deployed instantly to Netlify or Vercel in just one-click.",
+            "ctaHref": "",
+            "ctaLabel": "",
+            "id": "8a271b92-e31a-422a-96c2-bb2c245b674c",
+            "image": {
+              "url": "/img/cms/icons/1-click-deploy.png",
+              "title": "harum",
+              "description": "libero"
+            },
+            "textAlign": "left",
+            "theme": "light",
+            "title": "1-Click Deploy"
+          },
+          {
+            "__typename": "TextCard",
+            "content": "Simplified workflow with existing integrations for Algolia Search and Stripe payments.",
+            "ctaHref": "",
+            "ctaLabel": "",
+            "id": "5f5f59f8-8021-4914-9277-f1fd338128b9",
+            "image": {
+              "url": "/img/cms/icons/pre-built-integrations.png",
+              "title": "harum",
+              "description": "libero"
+            },
+            "textAlign": "left",
+            "theme": "light",
+            "title": "Pre-Built Integrations"
+          },
+          {
+            "__typename": "TextCard",
+            "content": "Access the documentation to make it easier to understand the code base and how processes work, and what the finished product will look like.",
+            "ctaHref": "",
+            "ctaLabel": "",
+            "id": "230b1fdc-4ee9-42c5-9f65-2013a5365f10",
+            "image": {
+              "url": "/img/cms/icons/comprehensive-documentation.png",
+              "title": "harum",
+              "description": "libero"
+            },
+            "textAlign": "left",
+            "theme": "light",
+            "title": "Comprehensive Documentation"
+          }
+        ]
+      },
+      {
+        "__typename": "BannerTextOnly",
+        "centered": true,
+        "containerMarginBottom": "",
+        "containerMarginTop": "",
+        "containerSize": "",
+        "content": "This section contains content from the product catalog. Read the docs for how to replace it.",
+        "ctaAlphaHref": "",
+        "ctaAlphaLabel": "",
+        "eyebrow": "",
+        "id": "cae87c00-c7d3-44f9-82c7-5ec4771670c5",
+        "minHeight": null,
+        "title": "New Arrivals"
+      },
+      {
+        "__typename": "CommerceConnector",
+        "containerMarginBottom": "5",
+        "containerMarginTop": "5",
+        "containerSize": "full",
+        "ctaMaxWidth": "362px",
+        "ctaMinWidth": "290px",
+        "id": "44968ea0-70f9-494f-b88c-d7ffe4804597",
+        "products": [
+          {
+            "brand": "Jordan",
+            "id": "6595895e-4987-466f-9575-dfa210c5546f",
+            "img": {
+              "url": "/img/products/_0000s_0000_red-front.jpg",
+              "alt": "Product image"
+            },
+            "name": "Long Sleeve Cropped Sweatshirt in Red",
+            "price": {
+              "current": 99,
+              "currentFormatted": "$99",
+              "regular": 99,
+              "regularFormatted": "$99"
+            },
+            "slug": "long-sleeve-cropped-sweatshirt-in-red"
+          },
+          {
+            "brand": "Jordan",
+            "id": "d8d33e0f-dca0-438d-9aa0-b0178f7167d0",
+            "img": {
+              "url": "/img/products/_0001s_0002_white-front.jpg",
+              "alt": "Product image"
+            },
+            "name": "Long Sleeve Sweatshirt in White",
+            "price": {
+              "current": 99,
+              "currentFormatted": "$99",
+              "regular": 99,
+              "regularFormatted": "$99"
+            },
+            "slug": "essential-long-sleeve-shirt-in-white"
+          },
+          {
+            "brand": "Jordan",
+            "id": "b099e071-2ab2-407f-9286-5a25e780be7e",
+            "img": {
+              "url": "/img/products/_0003s_0002_orange-front.jpg",
+              "alt": "Product image"
+            },
+            "name": "Casual Short Sleeve Maxi Dress in Umber",
+            "price": {
+              "current": 99,
+              "currentFormatted": "$99",
+              "regular": 99,
+              "regularFormatted": "$99"
+            },
+            "slug": "casual-short-sleeve-maxi-dress-in-umber"
+          },
+          {
+            "brand": "Jordan",
+            "id": "61d27a50-0521-4287-9592-d72bd38777dd",
+            "img": {
+              "url": "/img/products/_0005s_0000_white-front.jpg",
+              "alt": "Product image"
+            },
+            "name": "Casual Short Sleeve Dress in Bone",
+            "price": {
+              "current": 89,
+              "currentFormatted": "$89",
+              "regular": 89,
+              "regularFormatted": "$89"
+            },
+            "slug": "casual-short-sleeve-dress-in-bone"
+          }
+        ],
+        "title": "Women collections"
+      },
+      {
+        "__typename": "BannerTextOnly",
+        "centered": true,
+        "containerMarginBottom": "28",
+        "containerMarginTop": "",
+        "containerSize": "",
+        "content": "",
+        "ctaAlphaHref": "/category/accessories",
+        "ctaAlphaLabel": "View All New Products",
+        "eyebrow": "",
+        "id": "ea960d14-32fe-4d9d-9902-7450434e772e",
+        "minHeight": null,
+        "title": ""
+      },
+      {
+        "__typename": "BannerFull",
+        "containerMarginBottom": "20",
+        "containerMarginTop": null,
+        "containerSize": "",
+        "content": "Reach out to us for more information or with questions about Composable UI.",
+        "ctaAlphaHref": "",
+        "ctaAlphaLabel": "Contact Us",
+        "ctaBetaHref": "",
+        "ctaBetaLabel": "",
+        "eyebrow": "",
+        "id": "0361f9a7-c649-4601-87b5-0498f0883f9b",
+        "imageDesktop": {
+          "url": "/img/cms/home/lets-talk.png",
+          "title": "tenetur",
+          "description": "delectus"
+        },
+        "imageMobile": {
+          "url": "/img/cms/home/lets-talk-mobile.png",
+          "title": "accusantium",
+          "description": "at"
+        },
+        "linkHref1": "",
+        "linkHref2": "",
+        "linkHref3": "",
+        "linkHref4": "",
+        "linkHref5": "",
+        "linkHref6": "",
+        "linkLabel1": "",
+        "linkLabel2": "",
+        "linkLabel3": "",
+        "linkLabel4": "",
+        "linkLabel5": "",
+        "linkLabel6": "",
+        "overlayBackground": null,
+        "textPosition": "left",
+        "theme": "light",
+        "title": "Let’s Talk"
+      }
+    ]
+  }
+]

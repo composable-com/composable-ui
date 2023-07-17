@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartLoadingState matches the snapshot 1`] = `
+<div>
+  <div
+    class="css-1olhz9h"
+  >
+    <div
+      class="css-k008qs"
+    >
+      <div
+        class="chakra-skeleton css-1v940jh"
+      />
+      <div
+        class="chakra-skeleton css-1b5pt2q"
+      />
+    </div>
+    <hr
+      aria-orientation="horizontal"
+      class="chakra-divider css-c4o5e2"
+    />
+    <div
+      class="css-1bvc4cc"
+    >
+      <div
+        class="css-0"
+      >
+        <div
+          class="chakra-skeleton__group css-3mdty7"
+        >
+          <div
+            class="chakra-skeleton css-ctcxab"
+          />
+          <div
+            class="chakra-skeleton css-ctcxab"
+          />
+          <div
+            class="chakra-skeleton css-12r9lpq"
+          />
+        </div>
+        <div
+          class="chakra-skeleton__group css-6dcp1f"
+        >
+          <div
+            class="chakra-skeleton css-ctcxab"
+          />
+          <div
+            class="chakra-skeleton css-ctcxab"
+          />
+          <div
+            class="chakra-skeleton css-12r9lpq"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

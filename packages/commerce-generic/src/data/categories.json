@@ -1,0 +1,20 @@
+[
+  {
+    "id": "47eedbb2-dc81-4e86-b51d-292292e8e08d",
+    "name": "Accessories",
+    "products": [],
+    "slug": "Accessories"
+  },
+  {
+    "id": "8a48208b-8e19-4e13-8033-45306aa10350",
+    "name": "Men",
+    "products": [],
+    "slug": "Men"
+  },
+  {
+    "id": "367361b7-c6bd-494f-b093-be1d9f14b75a",
+    "name": "Women",
+    "products": [],
+    "slug": "Women"
+  }
+]

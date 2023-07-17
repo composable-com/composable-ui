@@ -1,0 +1,34 @@
+{
+  "name": "composable-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "composable-ui",
+    "packages/*",
+    "storybook"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -rf **/node_modules && rm -rf **/.turbo && rm -rf **/.next",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json}\"",
+    "lint": "turbo run lint",
+    "prepare": "husky install",
+    "test:ci": "turbo run test:ci",
+    "ts": "turbo run ts"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.8.3",
+    "turbo": "^1.7.0"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=18.14"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

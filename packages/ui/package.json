@@ -1,0 +1,40 @@
+{
+  "name": "@composable/ui",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "sideEffects": "false",
+  "scripts": {
+    "build": "echo \"Build script for @composable/ui ...\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
+    "ts": "tsc --noEmit --incremental",
+    "theme": "chakra-cli tokens src/chakra",
+    "theme:watch": "chakra-cli tokens src/chakra --watch"
+  },
+  "dependencies": {
+    "@next/font": "^13.2.4",
+    "keen-slider": "^6.7.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/anatomy": "^2.1.1",
+    "@chakra-ui/cli": "^2.3.0",
+    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/styled-system": "^2.5.1",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/icons": "^2.0.4",
+    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/theme-tools": "^2.0.5",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@types/react": "^18.0.15",
+    "next": "^13.1.4",
+    "react": "^18.2.0",
+    "react-hook-form": "^7.34.2",
+    "react-icons": "^4.4.0",
+    "typescript": "^4.5.5"
+  }
+}

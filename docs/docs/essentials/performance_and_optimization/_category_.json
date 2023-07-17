@@ -1,0 +1,8 @@
+{
+  "label": "Performance & Optimization",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Composable UI Performance & Optimization"
+  }
+}

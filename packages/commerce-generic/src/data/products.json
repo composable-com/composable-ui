@@ -1,0 +1,865 @@
+[
+  {
+    "brand": "Riley",
+    "category": "Accessories",
+    "description": "This rugged daypack is ready for action and ready to adventure outdoors with you in all conditions. The Venture Daypack comes tested by outdoor athletes to give you the features you need for optimal performance.",
+    "id": "4310122e-bbd1-42ed-9f8d-377f2a391860",
+    "images": [
+      {
+        "url": "/img/products/_0000s_0001_backpack-rugged-black-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0000s_0000_backpack-rugged-black-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "This bag is made from 100% recycled nylon. It is leather-free.",
+    "name": "Venture Daypack",
+    "price": 129,
+    "sku": "SKU-A1-2345",
+    "slug": "venture-daypack",
+    "type": "Bag",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Accessories",
+    "description": "Introducing the perfect travel companion, our City Backpack! Designed with the modern traveler in mind, this backpack offers both functionality and style. With multiple compartments and pockets, you can easily organize your essentials and keep them within reach. The spacious main compartment is perfect for storing your clothes, electronics, and other essentials, while the front pocket allows for quick access to items like your passport and phone. The adjustable straps and breathable back panel provide maximum comfort during long days of sightseeing. \n\nMade from durable and water-resistant materials, this backpack will keep your belongings protected in any weather. Whether you're exploring a new city or commuting to work, the City Backpack is the ideal choice for all your adventures.",
+    "id": "44e2582e-9ffa-4294-98b2-d21e4e40e9cd",
+    "images": [
+      {
+        "url": "/img/products/_0001s_0000_backpack-tech-black-full.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0001s_0001_backpack-tech-black-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "The City Backpack is made from high-quality, water-resistant materials to ensure the protection of your belongings in any weather. The exterior is crafted from a durable polyester material that can withstand daily wear and tear, while the interior is lined with a soft, scratch-resistant fabric. The zippers and hardware are made of premium metal to provide a long-lasting, secure closure.\n\nTo care for your backpack, simply wipe down the exterior with a damp cloth as needed. For tougher stains, spot clean with a mild detergent and let air dry. Avoid washing the backpack in a machine as this may damage the materials and hardware. By following these simple care instructions, your City Backpack will remain in great condition for all your future travels.",
+    "name": "City Backpack",
+    "price": 149,
+    "sku": "SKU-C3-9012",
+    "slug": "city-backpack",
+    "type": "Bag",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Accessories",
+    "description": "Introducing the perfect travel companion for longer trips! Designed with the modern traveler in mind, this backpack offers both functionality and style. The City Tote is made from durable and water-resistant materials, and has extra compartments to make sure you have plenty of storage for all your travel necessities.",
+    "id": "a00f0b8a-0900-4fc8-aedd-dd775715ad09",
+    "images": [
+      {
+        "url": "/img/products/_0002s_0001_tote-grey-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0002s_0000_tote-grey-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "The City Tote is made from high-quality, water-resistant materials to ensure the protection of your belongings in any weather. The exterior is crafted from a durable polyester material that can withstand daily wear and tear, while the interior is lined with a soft, scratch-resistant fabric. The zippers and hardware are made of premium metal to provide a long-lasting, secure closure.\n\nThis bag is made from 100% recycled nylon. It is leather-free.",
+    "name": "City Tote",
+    "price": 169,
+    "sku": "SKU-B2-5678",
+    "slug": "city-tote",
+    "type": "Bag",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Stay cool and comfortable this summer with our stylish and versatile men's shorts. Made from a durable blend of cotton and polyester, these shorts are designed to withstand the demands of daily wear while keeping you feeling your best in the heat.\n\nFeaturing a classic design and a comfortable fit, these men's shorts are perfect for any summer occasion, from a day at the beach to a backyard barbecue.",
+    "id": "00a619b3-3402-4088-ade9-76f705c956a7",
+    "images": [
+      {
+        "url": "/img/products/_0000s_0000_shorts-beige-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0000s_0001_shorts-beige-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0000s_0002_shorts-beige-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our shorts are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your shorts looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Essential Shorts in Taupe",
+    "price": 50,
+    "sku": "SKU-M13-9012",
+    "slug": "essential-shorts-in-taupe",
+    "type": "Shorts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Stay cool and comfortable this summer with our stylish and versatile men's shorts. Made from a durable blend of cotton and polyester, these shorts are designed to withstand the demands of daily wear while keeping you feeling your best in the heat.\n\nFeaturing a classic design and a comfortable fit, these men's shorts are perfect for any summer occasion, from a day at the beach to a backyard barbecue.",
+    "id": "e3ce1238-16f6-4fb6-b7ab-bd2022c3ace3",
+    "images": [
+      {
+        "url": "/img/products/_0001s_0000_shorts-brown-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0001s_0001_shorts-brown-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0001s_0002_shorts-brown-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our shorts are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your shorts looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Essential Shorts in Latte Brown",
+    "price": 50,
+    "sku": "SKU-N14-3456",
+    "slug": "essential-shorts-in-latte-brown",
+    "type": "Shorts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Essential woven shorts are versatile and comfortable casual wear made of lightweight, breathable fabric. These shorts feature a classic design with an elastic waistband and drawstring for a customizable fit. They are perfect for everyday wear, casual outings, and outdoor activities.",
+    "id": "99e9a2a9-4dd7-495a-b676-50443328423d",
+    "images": [
+      {
+        "url": "/img/products/_0002s_0000_shorts-grey-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0002s_0001_shorts-grey-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0002s_0002_shorts-grey-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our shorts are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your shorts looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Essential Shorts in Grey",
+    "price": 50,
+    "sku": "SKU-N14-3457",
+    "slug": "essential-shorts-in-grey",
+    "type": "Shorts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Men",
+    "description": "Essential woven shorts are our elevated take on a casual bermuda short made of lightweight, breathable fabric. These shorts feature a classic design with an elastic waistband and drawstring for a customizable fit. They are perfect for everyday wear, casual outings, and outdoor activities.",
+    "id": "ef27c3c3-46e7-4dcd-9ae6-8153fc3096a2",
+    "images": [
+      {
+        "url": "/img/products/_0003s_0000_shorts-white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0003s_0001_shorts-white-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0003s_0002_shorts-white-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our shorts are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your shorts looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Woven Shorts in White",
+    "price": 65,
+    "sku": "SKU-N14-3458",
+    "slug": "woven-shorts-in-white",
+    "type": "Shorts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Men",
+    "description": "The Classic Fit Trouser are a timeless and versatile pant option that offer a comfortable, relaxed fit through the seat, thigh and leg. They have a straight leg design and sit at the waist, making them suitable for a wide range of occasions. The classic fit offers a balance between style and comfort, making them a go-to choice for both casual and formal events.",
+    "id": "5fc9b907-5041-439d-a668-719755371d09",
+    "images": [
+      {
+        "url": "/img/products/_0004s_0000_pants-grey-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0004s_0001_pants-grey-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0004s_0002_pants-grey-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our pants are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your pants looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Classic Fit Trousers in Slate",
+    "price": 158,
+    "sku": "SKU-O15-7890",
+    "slug": "classic-fit-trousers-in-slate",
+    "type": "Pants",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "The Relaxed Casual Pant is a comfortable and versatile option that offer a loose, relaxed fit through the seat, thigh, and leg. They are made from a soft and breathable material such as cotton, polyester, or a blend, and are designed for a casual and relaxed look.",
+    "id": "ed7e02bf-3d4b-45e1-9df3-8d73a939a95b",
+    "images": [
+      {
+        "url": "/img/products/_0005s_0001_slacks-grey-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0005s_0000_slacks-grey-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0005s_0002_slacks-grey-sitting.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our pants are made from a blend of cotton and polyester, which provides a combination of comfort and durability.\nCare: To keep your pants looking their best, machine wash them in cold water and hang or lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Relaxed Casual Pant in Bone",
+    "price": 138,
+    "sku": "SKU-O15-7891",
+    "slug": "relaxed-casual-pant-in-bone",
+    "type": "Pants",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Elevate your wardrobe with our stylish and versatile men's button down shirts. Our relaxed button down shirt is a casual and comfortable top option that features a loose fit and traditional button front closure. It is typically made from soft and breathable materials such as cotton, linen, or a blend, and often has a relaxed and effortless style.",
+    "id": "d2a19f47-fe8f-48d0-a994-bea191a78c60",
+    "images": [
+      {
+        "url": "/img/products/_0006s_0000_tshirt-buttonup-beige-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0006s_0001_tshirt-buttonup-beige-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0006s_0002_tshirt-buttonup-beige-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "For care, these shirts can usually be machine washed and dried, but it is important to check the care instructions on the label for specific details. These shirts may need to be turned inside out before washing, or washed in cold water to prevent shrinking. To keep them looking their best, avoid over-drying and ironing on high heat.",
+    "name": "Short Sleeve Button Down in Bone",
+    "price": 68,
+    "sku": "SKU-O15-7999",
+    "slug": "short-sleeve-button-down-in-bone",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Elevate your wardrobe with our stylish and versatile men's button down shirts. Our relaxed button down shirt is a casual and comfortable top option that features a loose fit and traditional button front closure. It is typically made from soft and breathable materials such as cotton, linen, or a blend, and often has a relaxed and effortless style.",
+    "id": "4d884048-9dec-407d-a581-beb4754a18f9",
+    "images": [
+      {
+        "url": "/img/products/_0008s_0000_tshirt-button-sage-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0008s_0001_tshirt-button-sage-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0008s_0002_tshirt-button-sage-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "For care, these shirts can usually be machine washed and dried, but it is important to check the care instructions on the label for specific details. These shirts may need to be turned inside out before washing, or washed in cold water to prevent shrinking. To keep them looking their best, avoid over-drying and ironing on high heat.",
+    "name": "Short Sleeve Button Down in Sage",
+    "price": 68,
+    "sku": "SKU-O15-7989",
+    "slug": "short-sleeve-button-down-in-sage",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "Elevate your wardrobe with our stylish and versatile men's button down shirts. Our relaxed button down shirt is a casual and comfortable top option that features a loose fit and traditional button front closure. It is typically made from soft and breathable materials such as cotton, linen, or a blend, and often has a relaxed and effortless style.",
+    "id": "8ce50071-781f-4045-9bc1-1374226bdaca",
+    "images": [
+      {
+        "url": "/img/products/_0010s_0002_tshirt-buttonup-black-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0010s_0000_tshirt-buttonup-black-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0010s_0001_tshirt-buttonup-black-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "For care, these shirts can usually be machine washed and dried, but it is important to check the care instructions on the label for specific details. These shirts may need to be turned inside out before washing, or washed in cold water to prevent shrinking. To keep them looking their best, avoid over-drying and ironing on high heat.",
+    "name": "Short Sleeve Button Down in Black",
+    "price": 68,
+    "sku": "SKU-O15-7990",
+    "slug": "short-sleeve-button-down-in-black",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Riley",
+    "category": "Men",
+    "description": "The Riley polo shirt is a classic and versatile shirt option that features a collared neckline and a button front placket. Made from a soft and breathable material cotton, this will keep you comfortable with a preppy style.",
+    "id": "b7f4c63c-1308-4ceb-99c9-c8fe2caf6c7c",
+    "images": [
+      {
+        "url": "/img/products/_0009s_0000_tshirt-button-white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0009s_0001_tshirt-button-white-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0009s_0002_tshirt-button-white-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "For care, these shirts can usually be machine washed and dried, but it is important to check the care instructions on the label for specific details. These shirts may need to be turned inside out before washing, or washed in cold water to prevent shrinking. To keep them looking their best, avoid over-drying and ironing on high heat.",
+    "name": "Short Sleeve Polo in White",
+    "price": 58,
+    "sku": "SKU-O15-7991",
+    "slug": "short-sleeve-polo-in-white",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Men",
+    "description": "The Essential T-shirt is the epitome of comfort and style. Made from 100% soft and breathable cotton, it is perfect for everyday wear. The classic fit design features a crew neckline and short sleeves, making it versatile enough to dress up or down for any occasion.\n\nNot only is this t-shirt comfortable and easy to care for, it is also durable, making it a great investment for your wardrobe. Whether you're running errands, hanging out with friends, or just lounging at home, this t-shirt will keep you comfortable and stylish all day long.",
+    "id": "c5c9b69d-1946-4917-9d12-82f26e8e82e0",
+    "images": [
+      {
+        "url": "/img/products/_0007s_0000_tshirt-pink-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0007s_0001_tshirt-pink-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0007s_0002_tshirt-pink-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "To ensure its longevity, it is recommended to machine wash the t-shirt in cold water and tumble dry on low heat. This will keep the material looking and feeling great, wash after wash. Additionally, it is best to avoid using harsh chemicals and bleach when cleaning the t-shirt, as this may cause damage to the fabric.",
+    "name": "Essential Tshirt in Pink",
+    "price": 38,
+    "sku": "SKU-O15-7992",
+    "slug": "essential-tshirt-in-pink",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Men",
+    "description": "Stay warm and stylish with our high-quality men's jacket. Made from a durable blend of materials, including polyester and nylon, this jacket is designed to keep you protected from the elements while providing a stylish edge to your everyday wardrobe.\n",
+    "id": "d7860566-96a5-41d3-9997-1f81b8290f68",
+    "images": [
+      {
+        "url": "/img/products/_0011s_0002_jacket-blue-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0011s_0001_jacket-blue-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0011s_0000_jacket-blue-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: The Jacket is made from a blend of polyester, nylon, and down.\nCare: To keep your jacket looking its best, check the care label for specific instructions. This jacket can be machine washed in cold water.  Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Classic Canvas Jacket in Navy",
+    "price": 168,
+    "sku": "SKU-P16-1234",
+    "slug": "classic-canvas-jacket-in-navy",
+    "type": "Jacket",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Taylor",
+    "category": "Women",
+    "description": "Introducing the V-Neck Maxi Dress, the ultimate blend of comfort and style. Made from soft and breathable 100% cotton, this dress will keep you feeling comfortable all day long. The classic design features a flattering A-line silhouette that flatters all body types, making it a versatile addition to any wardrobe. The dress features a round neckline, short sleeves, and a knee-length hem, making it perfect for both casual and formal occasions. Whether you're running errands, meeting friends, or attending a special event, this dress will keep you looking and feeling your best.",
+    "id": "360d47f7-dbaf-4811-8013-67a5eb06471a",
+    "images": [
+      {
+        "url": "/img/products/_0002s_0000_beige-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0002s_0001_beige-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "V-Neck Maxi in Bone",
+    "price": 149,
+    "sku": "SKU-D4-3456",
+    "slug": "v-neck-maxi-in-bone",
+    "type": "Dress",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "The Casual Short Sleeve Maxi dress is the perfect addition to your wardrobe for those warm summer days. This dress features a comfortable, relaxed fit with a flattering flowy silhouette. The short sleeves provide coverage without being too hot, making it perfect for outdoor events or running errands.\n\n",
+    "id": "61c772e2-f14e-4651-8cd8-bd7cb87e9971",
+    "images": [
+      {
+        "url": "/img/products/_0003s_0002_orange-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0003s_0002_orange-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0003s_0001_orange-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Casual Short Sleeve Maxi Dress in Umber",
+    "price": 99,
+    "sku": "SKU-D4-3457",
+    "slug": "casual-short-sleeve-maxi-dress-in-umber",
+    "type": "Dress",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "The Casual Short Sleeve dress is a must-have for any fashion-forward woman. This dress features a chic and modern design that is perfect for a night out or a casual day at the beach. The short sleeves and mini length make it a versatile piece that can be dressed up or down, depending on the occasion.",
+    "id": "afd104cc-fe2a-48c1-831f-eb11654d39bb",
+    "images": [
+      {
+        "url": "/img/products/_0005s_0000_white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0005s_0001_white-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0005s_0002_white-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Casual Short Sleeve Dress in Bone",
+    "price": 89,
+    "sku": "SKU-D4-3458",
+    "slug": "casual-short-sleeve-dress-in-bone",
+    "type": "Dress",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Women",
+    "description": "Comfortable and stylish pants made from a blend of high-quality materials, including cotton, polyester, and spandex. Breathable, flexible, and quick-drying, these pants are perfect for daily wear. Easy to care for, just machine wash and tumble dry. Find your perfect pair today!",
+    "id": "79cbf658-7bed-44bc-a8dc-322ec92f7e2a",
+    "images": [
+      {
+        "url": "/img/products/_0006s_0000_pants-yellow-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0006s_0001_pants-yellow-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0006s_0002_pants-yellow-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "These pants are made from a blend of high-quality materials, including cotton, polyester, and spandex. This combination provides both comfort and durability, making them ideal for daily wear. The materials are breathable, flexible, and quick-drying, ensuring that you stay comfortable no matter what your day brings.\n\nTo care for your pants, machine wash in cold water and tumble dry on low heat. Avoid using bleach and ironing on high heat, as this may damage the fabric and affect its appearance. By following these simple care instructions, your pants will look great and last for many wears to come.",
+    "name": "Straight Fit Trousers in Yellow",
+    "price": 129,
+    "sku": "SKU-E5-7890",
+    "slug": "straight-fit-trousers-in-yellow",
+    "type": "Pants",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Women",
+    "description": "The elegant slim fit trouser is a versatile piece that can be dressed up or down to suit any occasion. This trouser is designed with a flattering slim fit cut, making it perfect for a sophisticated office look or a night out on the town. The elegant design and comfortable fit make it a go-to choice for any stylish individual.",
+    "id": "df6fcded-989a-4c1f-a89b-0c72c27b7302",
+    "images": [
+      {
+        "url": "/img/products/_0007s_0001_pants-black-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0007s_0000_pants-black-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0007s_0002_pants-black-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Wool and Polyester Blend\nCare: Dry clean recommended, or machine washable with cold water and hang dry, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Slim Fit Trousers in Black",
+    "price": 159,
+    "sku": "SKU-E5-7891",
+    "slug": "slim-fit-trousers-in-black",
+    "type": "Pants",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "A comfy wide leg pant is the ultimate choice for those who prioritize comfort and style. This pant features a relaxed fit with a wide leg design, making it perfect for lounging at home or running errands. The soft and lightweight material ensures maximum comfort, while the stylish design makes it a fashionable choice for any casual occasion.",
+    "id": "3a531579-2c81-41a8-ae7a-abac80f21d8b",
+    "images": [
+      {
+        "url": "/img/products/_0008s_0000_pants-blue-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0008s_0001_pants-blue-cropped.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Relaxed Wide Leg Pant in ",
+    "price": 99,
+    "sku": "SKU-E5-7892",
+    "slug": "relaxed-wide-leg-pant-in-",
+    "type": "Pants",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Women",
+    "description": "A soft and breathable shirt made from a blend of cotton, polyester, and rayon. Lightweight and moisture-wicking, this shirt is perfect for daily wear. Easy to care for, just machine wash and tumble dry. Find your perfect shirt today!",
+    "id": "6a21aab8-b729-450a-82b7-31dc312972c6",
+    "images": [
+      {
+        "url": "/img/products/_0011s_0000_shirt-blue-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0011s_0001_shirt-blue-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0011s_0002_shirt-blue-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "These shirts are made from a soft and breathable blend of high-quality materials, including cotton, polyester, and rayon. This combination provides both comfort and durability, making them ideal for daily wear. The materials are lightweight and moisture-wicking, ensuring that you stay cool and dry throughout the day.\n\nTo care for your shirt, machine wash in cold water and tumble dry on low heat. Avoid using bleach and ironing on high heat, as this may damage the fabric and affect its appearance. By following these simple care instructions, your shirt will look great and last for many wears to come.",
+    "name": "Long Sleeve Button down in Blue",
+    "price": 79,
+    "sku": "SKU-F6-1234",
+    "slug": "long-sleeve-button-down-in-blue",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Taylor",
+    "category": "Women",
+    "description": "Step out in style with our chic romper. Made from a soft and comfortable blend of high-quality materials, including cotton and polyester, this romper is designed to keep you looking and feeling your best all day long.\n\nFeaturing a trendy design and versatile style, this romper is perfect for a variety of occasions, from a day of shopping to a night out on the town. With a flattering fit and a range of colors to choose from, you're sure to find the perfect romper to suit your personal style.",
+    "id": "1f8608de-e581-423a-a3f5-a856b6db4387",
+    "images": [
+      {
+        "url": "/img/products/_0009s_0000_romper-white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0009s_0001_romper-white-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0009s_0002_romper-white-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Organic Cotton Blend\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Sleeveless Romper in Bone",
+    "price": 129,
+    "sku": "SKU-H8-0123",
+    "slug": "sleeveless-romper-in-bone",
+    "type": "Jumpsuits",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Taylor",
+    "category": "Women",
+    "description": "Experience the ultimate in comfort and style with our cotton jumpsuit. Made from a soft and breathable blend of high-quality cotton, this jumpsuit is designed to keep you feeling your best all day long.\n\nFeaturing a versatile design and comfortable fit, this jumpsuit is perfect for a variety of occasions, from a casual day out to a dressier event. With a flattering cut and a range of colors to choose from, you're sure to find the perfect jumpsuit to suit your personal style.",
+    "id": "9946f55d-8679-4219-a97a-21e334a2f751",
+    "images": [
+      {
+        "url": "/img/products/_0010s_0000_jumpsuit-beige-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0010s_0001_jumpsuit-beige-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0010s_0002_jumpsuit-beige-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Organic Cotton Blend\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Relaxed Jumpsuit in Taupe",
+    "price": 179,
+    "sku": "SKU-I9-4567",
+    "slug": "relaxed-jumpsuit-in-taupe",
+    "type": "Jumpsuits",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Riley",
+    "category": "Women",
+    "description": "Stay cool and stylish all summer long with our jean shorts. Made from a durable blend of high-quality cotton and elastane, these shorts are designed to withstand the demands of daily wear while keeping you comfortable in the heat.\n\nFeaturing a classic design and versatile style, these jean shorts are perfect for any summer occasion, from a day at the beach to a backyard barbecue. With a range of washes and finishes, from dark indigo to light stone, you're sure to find the perfect pair of jean shorts to suit your personal style.",
+    "id": "98fb8761-b477-4359-9bfd-488b221fadbc",
+    "images": [
+      {
+        "url": "/img/products/_0013s_0000_shorts-denim-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0013s_0001_shorts-denim-side.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0013s_0002_shorts-denim-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Denim\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric). It's also recommended to wash denim separately to avoid dye transfer. Avoid using bleach.",
+    "name": "Classic Fit Denim Shorts",
+    "price": 99,
+    "sku": "SKU-J10-8901",
+    "slug": "classic-fit-denim-shorts",
+    "type": "Shorts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Avery",
+    "category": "Women",
+    "description": "Elevate your wardrobe with our stylish and versatile blazer. Made from a high-quality blend of cotton and wool, this blazer is designed to keep you looking sharp and feeling comfortable, no matter the occasion.\n\nFeaturing a trendy and modern design, this blazer is perfect for adding a touch of sophistication to any outfit. With a range of colors to choose from, including bold and neutral hues, you're sure to find the perfect blazer to suit your personal style.",
+    "id": "c67df85a-c0c7-4a04-902c-43f3083a5398",
+    "images": [
+      {
+        "url": "/img/products/_0017s_0000_blazer-sage-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0017s_0001_blazer-sage-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0017s_0002_blazer-sage-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Organic cotton and wool blend\nCare: Dry clean or hand wash with cold water, lay flat to dry, cool iron if needed. Avoid using bleach and tumble drying.",
+    "name": "Relaxed Blazer in Bone",
+    "price": 159,
+    "sku": "SKU-K11-2345",
+    "slug": "relaxed-blazer-in-bone",
+    "type": "Jacket",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "Stay cozy and comfortable in our soft and stylish sweatshirt. Made from a high-quality blend of cotton and polyester, this sweatshirt is designed to keep you feeling your best, no matter what the day brings.\n\nFeaturing a classic design and a comfortable fit, this sweatshirt is perfect for lounging at home or running errands around town. With a range of colors to choose from, including bold and neutral hues, you're sure to find the perfect sweatshirt to suit your personal style.\n",
+    "id": "52512709-c327-4845-80c1-9d449d039c4e",
+    "images": [
+      {
+        "url": "/img/products/_0000s_0000_red-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0000s_0001_red-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0000s_0002_red-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Long Sleeve Cropped Sweatshirt in Red",
+    "price": 99,
+    "sku": "SKU-L12-5678",
+    "slug": "long-sleeve-cropped-sweatshirt-in-red",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "A comfy sweatshirt is a must-have for those who love to lounge in style. This sweatshirt features a relaxed fit with a soft and cozy material, making it perfect for staying in on a lazy day. The simple and versatile design makes it a great choice for layering or wearing on its own.",
+    "id": "39178257-1ce6-4ad3-980c-10137a9c7951",
+    "images": [
+      {
+        "url": "/img/products/_0012s_0000_longsleeve-white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0012s_0001_longsleeve-white-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Long Sleeve Sweatshirt in White",
+    "price": 99,
+    "sku": "SKU-L12-5679",
+    "slug": "long-sleeve-sweatshirt-in-white",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "Our casual long sleeve shirt is the perfect addition to your everyday wardrobe. Made with a soft and breathable blend of cotton and polyester, this shirt is designed to keep you comfortable all day long. The classic fit allows for ease of movement and a flattering silhouette, while the ribbed cuffs provide a snug fit that keeps the sleeves in place.",
+    "id": "748865c6-da0d-4256-9057-3aa45995d52e",
+    "images": [
+      {
+        "url": "/img/products/_0001s_0002_white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0001s_0001_white-back.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Essential Long Sleeve Shirt in White",
+    "price": 38,
+    "sku": "SKU-L12-5680",
+    "slug": "essential-long-sleeve-shirt-in-white",
+    "type": "Shirts",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Taylor",
+    "category": "Women",
+    "description": "Stay cozy and stylish with our must-have sweater dress. Made from a soft and comfortable blend of materials, including wool and acrylic, this dress is designed to keep you warm and looking great all season long.\n\nFeaturing a range of styles and designs, from classic turtlenecks to trendy off-the-shoulder looks, this dress is perfect for any occasion. With a range of colors and sizes to choose from, you're sure to find the perfect dress to suit your personal style.",
+    "id": "09b3d61a-86fa-4406-a2e8-6a483e84d407",
+    "images": [
+      {
+        "url": "/img/products/_0004s_0001_brown-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0004s_0003_brown-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0004s_0005_brown-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: Our sweater dresses are made from a blend of wool and acrylic, which provides a combination of warmth and softness.\nCare: To keep your sweater dress looking its best, machine wash it in cold water and lay flat to dry. Avoid using bleach or ironing directly on any embellishments or prints.",
+    "name": "Brown Sweater dress",
+    "price": 159,
+    "sku": "SKU-Q17-6789",
+    "slug": "brown-sweater-dress",
+    "type": "Dress",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Parker",
+    "category": "Women",
+    "description": "This swimsuit is the perfect combination of style and comfort, made from a smooth and durable blend of polyester and nylon. The fabric offers both comfort and stretch for a snug fit that won't restrict your movements, making it ideal for all kinds of water activities. The swimsuit features a flattering design, and has been tested for optimal performance.",
+    "id": "270e2136-9d90-4355-8aee-9f5d83335070",
+    "images": [
+      {
+        "url": "/img/products/_0014s_0000_bathingsuit-white-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0014s_0001_bathingsuit-white-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0014s_0002_bathingsuit-white-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 70% Nylon, 30% Polyester\nCare: We recommend hand washing your swimsuit in cold water and hanging it to dry. Do not use bleach, as this can cause the fabric to deteriorate over time. ",
+    "name": "Scoop One-Piece in Bone",
+    "price": 79,
+    "sku": "SKU-R18-0123",
+    "slug": "scoop-one-piece-in-bone",
+    "type": "Activewear",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Parker",
+    "category": "Women",
+    "description": "These high-rise leggings are made from a comfortable and stretchy blend of polyester and lycra, providing a flattering fit that stays in place all day long. The high waistband sits snugly on your hips, providing extra coverage and support, while the smooth fabric feels soft against your skin.",
+    "id": "d8d37ed8-da0e-48e6-9c50-48ba0cf7d04d",
+    "images": [
+      {
+        "url": "/img/products/_0015s_0000_tights-pink-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0015s_0001_tights-pink-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0015s_0002_tights-pink-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 70% Nylon, 19% Polyester, 11% Lycra\nCare: Simply machine wash in cold water and hang dry. Do not use bleach or iron. With proper care, these leggings will retain their shape and color, making them a go-to for your workout or casual outfits.",
+    "name": "Stride High-Rise Legging in Rose",
+    "price": 59,
+    "sku": "SKU-S19-4567",
+    "slug": "stride-high-rise-legging-in-rose",
+    "type": "Activewear",
+    "updatedAt": 1677163891140
+  },
+  {
+    "brand": "Jordan",
+    "category": "Women",
+    "description": "This pajama set is made from soft and breathable 100% cotton, providing ultimate comfort for a good night's sleep. The top features a classic button-down design and the pants have an elastic waistband for a comfortable fit.",
+    "id": "249abd57-f030-4ca2-b52b-e611190bc112",
+    "images": [
+      {
+        "url": "/img/products/_0016s_0002_pajamas-grey-front.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0016s_0001_pajamas-grey-back.jpg",
+        "alt": ""
+      },
+      {
+        "url": "/img/products/_0016s_0000_pajamas-grey-side.jpg",
+        "alt": ""
+      }
+    ],
+    "materialAndCare": "Material: 100% Organic Cotton\nCare: Machine washable with cold water, hang dry or tumble dry low, iron if needed (on a low heat setting to avoid damaging the fabric).",
+    "name": "Essential Pajama set in slate",
+    "price": 59,
+    "sku": "SKU-T20-8901",
+    "slug": "essential-pajama-set-in-slate",
+    "type": "Sleepwear",
+    "updatedAt": 1677163891140
+  }
+]

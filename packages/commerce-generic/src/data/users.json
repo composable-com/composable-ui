@@ -1,0 +1,20 @@
+[
+  {
+    "id": "9d4facbe-8d3d-46ae-84b7-bcd05ec70905",
+    "name": "Test User",
+    "email": "test@email.com",
+    "address": "Test Address 1"
+  },
+  {
+    "id": "c383f927-6579-4824-9bed-9dd4ed36971a",
+    "name": "Dev user",
+    "email": "dev@email.com",
+    "address": "Test Address 2"
+  },
+  {
+    "id": "40c7169e-901f-4b94-b1e4-25fa78c20695",
+    "name": "Admin User",
+    "email": "admin@email.com",
+    "address": "Test Address 3"
+  }
+]
