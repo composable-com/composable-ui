@@ -18,44 +18,56 @@ const HEADERS = {
     'camera=(self), microphone=(self), geolocation=(self), interest-cohort=(self)',
 }
 
-module.exports = withBundleAnalyzer({
-  reactStrictMode: true,
-  transpilePackages: [
-    '@composable/cms-generic',
-    '@composable/commerce-generic',
-    '@composable/stripe',
-    '@composable/types',
-    '@composable/ui',
-  ],
-  images: {
-    domains: ['loremflickr.com'],
-  },
-  i18n: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-  },
-  experimental: {
-    esmExternals: 'loose',
-  },
-  swcMinify: true,
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: Object.entries(HEADERS).map(([key, value]) => ({
-          key,
-          value,
+module.exports = () => {
+  function checkEnv() {
+    if (!process.env.NEXTAUTH_SECRET) {
+      throw new Error(
+        'Required environment variable NEXTAUTH_SECRET is not defined. Please see https://docs.composable.com/docs/essentials/configuration for more information.'
+      )
+    }
+  }
+
+  checkEnv()
+
+  return withBundleAnalyzer({
+    reactStrictMode: true,
+    transpilePackages: [
+      '@composable/cms-generic',
+      '@composable/commerce-generic',
+      '@composable/stripe',
+      '@composable/types',
+      '@composable/ui',
+    ],
+    images: {
+      domains: ['loremflickr.com'],
+    },
+    i18n: {
+      locales: ['en-US'],
+      defaultLocale: 'en-US',
+    },
+    experimental: {
+      esmExternals: 'loose',
+    },
+    swcMinify: true,
+    async headers() {
+      return [
+        {
+          source: '/:path*',
+          headers: Object.entries(HEADERS).map(([key, value]) => ({
+            key,
+            value,
+          })),
+        },
+        ...NO_INDEX_FOLLOW_PATHS.map((source) => ({
+          source,
+          headers: [
+            {
+              key: 'x-robots-tag',
+              value: 'noindex, follow',
+            },
+          ],
         })),
-      },
-      ...NO_INDEX_FOLLOW_PATHS.map((source) => ({
-        source,
-        headers: [
-          {
-            key: 'x-robots-tag',
-            value: 'noindex, follow',
-          },
-        ],
-      })),
-    ]
-  },
-})
+      ]
+    },
+  })
+}

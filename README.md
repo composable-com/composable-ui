@@ -118,8 +118,7 @@ Clone, build and run the Docker image:
 ```sh
 git clone https://github.com/composable-com/composable-ui
 cd composable-ui
-sh docker.sh build
-sh docker.sh run
+docker-compose up --build
 ```
 
 You should now have the Composable UI application running through Docker. Go to your web browser and navigate to <http://localhost:3000>
