@@ -1,0 +1,8 @@
+version: '3'
+services:
+  next_app:
+    build: .
+    env_file:
+      - composable-ui/.env.development
+    ports:
+      - 3000:3000
