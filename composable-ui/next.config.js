@@ -21,7 +21,7 @@ const HEADERS = {
 module.exports = () => {
   function checkEnv() {
     if (!process.env.NEXTAUTH_SECRET) {
-      throw new Error(
+      console.warn(
         'Required environment variable NEXTAUTH_SECRET is not defined. Please see https://docs.composable.com/docs/essentials/configuration for more information.'
       )
     }
