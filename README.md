@@ -97,6 +97,7 @@ Use the button below to build and deploy your own copy of Composable UI to Verce
 
 - You’ll be prompted to authenticate with GitHub and choose a repository name.
 - Vercel will then automatically create a repository in your GitHub account with a copy of the files from the Composable UI repository.
+- You will be prompted to enter a value for the NEXTAUTH_SECRET environment variable. See the NextAuth docs for more information, including a script for how to generate a secure secret that will be used for cookie JWT encryption.
 - Next, it will build and deploy the new site on Vercel.
 
 ### Option 3: 1-Click Deployment to Netlify
@@ -107,6 +108,7 @@ Use the button below to build and deploy your own copy of Composable UI to Netli
 
 - You’ll be prompted to authenticate with GitHub and choose a repository name.
 - Netlify will then automatically create a repository in your GitHub account with a copy of the files from the Composable UI repository.
+- You will be prompted to enter a value for the NEXTAUTH_SECRET environment variable. See the NextAuth docs for more information, including a script for how to generate a secure secret that will be used for cookie JWT encryption.
 - Next, it will build and deploy the new site on Netlify.
 
 ### Option 4: Run in Docker
