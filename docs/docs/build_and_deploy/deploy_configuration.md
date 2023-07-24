@@ -25,7 +25,7 @@ Vercel creates a repository automatically in your GitHub account with a copy of 
 
 1. Click the following link to build and deploy your own copy of Composable UI to  Netlify:
 
-    [![Deploy with Netlify  ](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/composable-com/composable-ui&base=composable-ui#PNPM_FLAGS=--shamefully-hoist)
+    [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/composable-com/composable-ui&base=composable-ui#PNPM_FLAGS=--shamefully-hoist)
 
 1. When prompted, authenticate with GitHub and choose a repository name.
 Netlify creates a repository in your GitHub account automatically with a copy of the files from the Composable UI repository, and the new site is built and deployed on Netlify.
