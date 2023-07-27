@@ -55,7 +55,7 @@ Start building your dream commerce site today with Composable UI!
 
 ## Deployment / Installation
 
-The are multiple methods of running and deploying Composable UI. 
+There are multiple methods of running and deploying Composable UI. 
 
 Be sure to read the documentation on Composable UI's [environment variables](https://docs.composable.com/docs/essentials/configuration). When deploying to a cloud provider like Vercel or Netlify you must set the `NEXTAUTH_SECRET` environment variable. For more information on Composable UI environment variables, see the [Application Configuration](../essentials/configuration.md) section. See these links on how to set environment variables for [Netlify](https://docs.netlify.com/environment-variables/overview/) and [Vercel](https://vercel.com/docs/concepts/projects/environment-variables).
 
