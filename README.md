@@ -2,7 +2,7 @@
 ![Composable UI Logo](./docs/static/img/logo-dark.svg#gh-dark-mode-only)
 ![Composable UI Logo](./docs/static/img/logo.svg#gh-light-mode-only)
 
-**Composable UI provides the foundation for building blazing-fast modern composable commerce sites. It is built with best-in-class technologies including React, Next.js, Typescript, Chakra UI, and React Query.**
+**Composable UI provides the foundation for building blazing-fast modern composable commerce sites. It is built with best-in-class technologies including React, Next.js, Typescript, Chakra UI, React Query, and tRPC.**
 
 Composable UI can be integrated with any headless commerce, CMS, and other [MACH](https://machalliance.org/mach-technology) services of your choice, but comes pre-integrated with Algolia search, Stripe for payments, and mocked commerce and CMS services.
 
