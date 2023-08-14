@@ -13,7 +13,7 @@ Composable UI is built using React, Next.js, React Query, tRPC, Chakra UI, and o
 | React Query | A data fetching library for React applications. This library provides caching, deduplication, and other advanced features to easily manage and update remote data in real-time. | [Getting Started with React Query](https://react-query-v3.tanstack.com/overview) |
 | tRPC | A library used to build end-to-end typesafe APIs. Combines with Next.js and React Query to provide a powerful developer experience of writing and consuming an API. | [tRPC Quickstart](https://trpc.io/docs/quickstart)
 | Chakra UI | A component library for React that provides a set of customizable and accessible UI components. All Composable UI components are built using the Chakra UI library. | [Getting Started with Chakra UI](https://chakra-ui.com/getting-started) |
-| PNPM |A different package manager for Node.js applications, apart from yarn and npm. With PNPM, you can share packages across multiple projects and save disk space and increase installation speed. | [PNPM Docs](https://pnpm.io/) |
+| pnpm |A different package manager for Node.js applications, apart from yarn and npm. With pnpm, you can share packages across multiple projects and save disk space and increase installation speed. | [pnpm Docs](https://pnpm.io/) |
 
 ## Related Resources
 

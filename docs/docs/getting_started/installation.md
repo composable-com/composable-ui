@@ -20,13 +20,13 @@ Ensure that you have installed the following on the local development machine:
 
    For changing the Node.js version, follow the instructions in the [nvm documentation](https://github.com/nvm-sh/nvm).
 
--  PNPM v8.0 or higher. For checking the current version of PNPM on your machine, run the following command:
+-  pnpm v8.0 or higher. For checking the current version of pnpm on your machine, run the following command:
 
    ```shell
    pnpm --version
    ```
 
-   For installing PNPM, run the following command:
+   For installing pnpm, run the following command:
 
    ```shell
    npm install -g pnpm

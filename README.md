@@ -4,7 +4,7 @@
 
 **Composable UI provides the foundation for building blazing-fast modern composable commerce sites. It is built with best-in-class technologies including React, Next.js, Typescript, Chakra UI, React Query, and tRPC.**
 
-Composable UI can be integrated with any headless commerce, CMS, and other [MACH](https://machalliance.org/mach-technology) services of your choice, but comes pre-integrated with Algolia search, Stripe for payments, and mocked commerce and CMS services.
+Composable UI can be integrated with any headless commerce, CMS, and other [MACH](https://machalliance.org/mach-technology) services of your choice, and comes pre-integrated with Algolia for product filtering, Stripe for payments, and mocked commerce and CMS services.
 
 Composable UI offers the following:
 
@@ -31,6 +31,9 @@ Start building your dream commerce site today with Composable UI!
   - [Algolia Setup](#algolia-setup)
   - [Stripe Setup](#stripe-setup)
 - [Documentation Installation](#documentation-installation)
+  - [Deployment](#deployment)
+    - [1-Click Deployment to Vercel](#1-click-deployment-to-vercel)
+    - [1-Click Deployment to Netlify](#1-click-deployment-to-netlify)
 - [What's inside?](#whats-inside)
 - [Next Steps](#next-steps)
 
@@ -193,7 +196,7 @@ Use the button below to build and deploy your own copy of Composable UI Docs to 
 
 ## What's inside?
 
-This workspace uses [PNPM](https://pnpm.io/) as a package manager. It includes the following packages/apps:
+This workspace uses [pnpm](https://pnpm.io/) as a package manager. It includes the following packages/apps:
 
 - `composable-ui`: a [Next.js](https://nextjs.org) application
 - `packages/cms-generic`: an example implementation of a CMS engine
