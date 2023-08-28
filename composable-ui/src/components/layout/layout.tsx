@@ -32,9 +32,29 @@ export const Layout = ({ children }: Props) => {
   const router = useRouter()
   const isCheckout = router.pathname === '/checkout'
 
+  const SeoConfig = (
+    <DefaultSeo
+      defaultTitle={APP_CONFIG.NAME}
+      titleTemplate={APP_CONFIG.TITLE_TEMPLATE}
+      openGraph={{
+        type: 'website',
+        locale,
+        url: getSiteUrl(),
+        site_name: APP_CONFIG.NAME,
+      }}
+      additionalLinkTags={[
+        {
+          rel: 'icon',
+          href: APP_CONFIG.FAVICON,
+        },
+      ]}
+    />
+  )
+
   if (isCheckout) {
     return (
       <Box minHeight="100vh" bg={'shading.100'}>
+        {SeoConfig}
         {children}
       </Box>
     )
@@ -44,22 +64,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <>
       <Flex direction="column" minHeight="100vh">
-        <DefaultSeo
-          defaultTitle={APP_CONFIG.NAME}
-          titleTemplate={APP_CONFIG.TITLE_TEMPLATE}
-          openGraph={{
-            type: 'website',
-            locale,
-            url: getSiteUrl(),
-            site_name: APP_CONFIG.NAME,
-          }}
-          additionalLinkTags={[
-            {
-              rel: 'icon',
-              href: APP_CONFIG.FAVICON,
-            },
-          ]}
-        />
+        {SeoConfig}
 
         <Header />
         <Box flexGrow="1" role="main">
