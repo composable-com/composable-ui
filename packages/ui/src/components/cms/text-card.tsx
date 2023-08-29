@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { Box, BoxProps, Button, ButtonProps } from '@chakra-ui/react'
+import {
+  AspectRatio,
+  Box,
+  BoxProps,
+  Button,
+  ButtonProps,
+} from '@chakra-ui/react'
 
 export interface TextCardProps {
   root?: Omit<BoxProps, 'children'>
@@ -43,13 +49,15 @@ export const TextCard = ({
     >
       {image?.src && (
         <Box mb={6}>
-          <Image
-            src={image.src}
-            alt={image?.alt ?? ''}
-            width={50}
-            height={50}
-            style={{ width: '50px', height: '50px' }}
-          />
+          <AspectRatio
+            ratio={1}
+            position="relative"
+            width="50px"
+            overflow="hidden"
+            mb={3}
+          >
+            <Image src={image.src} alt={image?.alt ?? ''} fill />
+          </AspectRatio>
         </Box>
       )}
 

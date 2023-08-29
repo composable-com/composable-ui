@@ -72,7 +72,7 @@ export const BannerImage = ({
           style={{ objectFit: 'cover' }}
           loading={isLazy ? 'lazy' : 'eager'}
           priority={!isLazy}
-          sizes={'calc(100vw - 64px)'}
+          sizes={'50vw'}
         />
         {overlayBackground && (
           <Box

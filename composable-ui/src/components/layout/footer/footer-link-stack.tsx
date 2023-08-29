@@ -21,6 +21,7 @@ export const LinkStack = ({ item, level = 0 }: LinkStackProps) => {
           href={href}
           padding={0}
           textStyle={'Desktop/Body-S'}
+          prefetch={false}
         >
           {label}
         </Link>

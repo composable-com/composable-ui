@@ -18,7 +18,7 @@
   "devDependencies": {
     "@chakra-ui/anatomy": "^2.1.1",
     "@chakra-ui/cli": "^2.3.0",
-    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/react": "^2.8.0",
     "@chakra-ui/styled-system": "^2.5.1",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
@@ -26,7 +26,7 @@
   },
   "peerDependencies": {
     "@chakra-ui/icons": "^2.0.4",
-    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/react": "^2.8.0",
     "@chakra-ui/theme-tools": "^2.0.5",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
