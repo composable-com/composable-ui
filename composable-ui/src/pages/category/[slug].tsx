@@ -43,7 +43,7 @@ export const getStaticProps: GetStaticProps<CategoryPageProps> = async (
         algoliaKeysSet: !algoliaKeysMissing,
         query: slug,
       },
-      revalidate: 10,
+      revalidate: 60,
     }
   }
 
@@ -64,7 +64,7 @@ export const getStaticProps: GetStaticProps<CategoryPageProps> = async (
       query: slug,
       serverState,
     },
-    revalidate: 10,
+    revalidate: 60,
   }
 }
 
