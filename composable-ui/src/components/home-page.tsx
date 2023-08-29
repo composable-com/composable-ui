@@ -10,6 +10,9 @@ import {
 } from './cms'
 import { UiContainer } from '@composable/ui/src/components/ui-container'
 import { PageItem } from '@composable/types'
+import { useOnScreen } from 'hooks'
+import React, { useState, useEffect } from 'react'
+import { LAZY_LOAD_BATCH_SIZE } from 'utils/constants'
 
 const renderItem = (item: PageItem) => {
   switch (item?.__typename) {
@@ -39,7 +42,16 @@ export const HomePage = () => {
       refetchOnMount: false,
     }
   )
+  const [visibleCount, setVisibleCount] = useState(LAZY_LOAD_BATCH_SIZE)
+  const [loaderRef, isLoaderVisible] = useOnScreen<HTMLDivElement>({
+    rootMargin: '200px',
+  })
 
+  useEffect(() => {
+    if (isLoaderVisible) {
+      setVisibleCount((prevCount) => prevCount + LAZY_LOAD_BATCH_SIZE)
+    }
+  }, [isLoaderVisible, data])
   return (
     <Box>
       <NextSeo
@@ -47,16 +59,21 @@ export const HomePage = () => {
         description="Welcome to Composable UI! Create impactful, online storefronts with a foundational React and Next.js design system and UI library for modern composable commerce websites."
       />
       <Container maxW="container.xl">
-        {data?.items?.map((item) => (
-          <UiContainer
-            key={item?.id}
-            size={item?.containerSize}
-            marginBottom={item?.containerMarginBottom}
-            marginTop={item?.containerMarginTop}
-          >
-            {renderItem(item)}
-          </UiContainer>
-        ))}
+        {data?.items?.slice(0, visibleCount).map((item) => {
+          return (
+            <UiContainer
+              key={item?.id}
+              size={item?.containerSize}
+              marginBottom={item?.containerMarginBottom}
+              marginTop={item?.containerMarginTop}
+            >
+              {renderItem(item)}
+            </UiContainer>
+          )
+        })}
+        {visibleCount < (data?.items?.length || 0) && (
+          <div ref={loaderRef}></div>
+        )}
       </Container>
     </Box>
   )
