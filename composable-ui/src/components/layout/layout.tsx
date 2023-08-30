@@ -1,16 +1,17 @@
-import { APP_CONFIG } from 'utils/constants'
-import { Box, Flex, Link, Text } from '@chakra-ui/react'
-import { cmsFooterLinks } from './_data'
+import { ReactElement } from 'react'
+import dynamic from 'next/dynamic'
+import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import { DefaultSeo } from 'next-seo'
+import { Box, Flex, Link, Text } from '@chakra-ui/react'
+
+import { APP_CONFIG } from 'utils/constants'
+import { cmsFooterLinks } from './_data'
 import { getSiteUrl } from 'utils/get-site-url'
 import { Header } from './header'
 import { Logo } from '../logo'
 import { useComposable } from 'hooks'
 import { useOnScreen } from '../../hooks'
-import { useRouter } from 'next/router'
-import dynamic from 'next/dynamic'
-import NextLink from 'next/link'
-import { ReactElement } from 'react'
 
 const DynamicCartDrawer = dynamic(() =>
   import('components/cart').then((_module) => _module.CartDrawer)
