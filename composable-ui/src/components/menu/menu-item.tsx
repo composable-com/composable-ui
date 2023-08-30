@@ -46,6 +46,7 @@ export const MenuItem = ({
         fontWeight: '700 !important',
         borderColor: 'primary',
       }}
+      prefetch={false}
       {...rootProps}
     >
       {children ? (

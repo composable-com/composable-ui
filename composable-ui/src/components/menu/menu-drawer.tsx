@@ -36,6 +36,7 @@ export const MenuDrawer = () => {
                 href={`/category/${item.slug}`}
                 key={item.slug}
                 onClick={onClose}
+                prefetch={false}
               >
                 <Text
                   maxW="md"

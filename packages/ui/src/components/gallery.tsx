@@ -123,7 +123,7 @@ export const Gallery = (props: GalleryProps) => {
                     }. ${image.alt || productName}`}
                     src={image.src}
                     priority={image.priority}
-                    sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, 50vw"
+                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 70vw, (max-width: 1024px) 70vw, 50vw"
                     style={{
                       objectFit: 'contain',
                     }}

@@ -20,7 +20,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     // This is to prevent flashing of content - if the page was refetched every
     // time the user visited it, they would likely see a brief flash of an older
     // version of the page before the updated content is loaded.
-    revalidate: 1,
+    revalidate: 60,
   }
 }
 

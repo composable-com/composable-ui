@@ -19,6 +19,7 @@ export const LoginAction = (props: { rootProps?: BoxProps }) => {
     signIn: intl.formatMessage({ id: 'action.signIn' }),
     myAccount: intl.formatMessage({ id: 'account.dashboard.title' }),
   }
+  const loggedIn = session && session.loggedIn
 
   return (
     <Box display={'flex'} {...props.rootProps}>
@@ -28,7 +29,11 @@ export const LoginAction = (props: { rootProps?: BoxProps }) => {
         textDecoration={'underline'}
         textUnderlineOffset={'5px'}
         aria-label={
-          accountDrawer.isOpen ? message.closeMyAccount : message.openMyAccount
+          loggedIn
+            ? accountDrawer.isOpen
+              ? message.closeMyAccount
+              : message.openMyAccount
+            : message.signIn
         }
         onClick={() => {
           menuDrawer.onClose()
@@ -55,7 +60,7 @@ export const LoginAction = (props: { rootProps?: BoxProps }) => {
         </Box>
 
         <Text textStyle={'Desktop/Body-S'} fontWeight={'700'}>
-          {session && session.loggedIn ? message.myAccount : message.signIn}
+          {loggedIn ? message.myAccount : message.signIn}
         </Text>
       </Button>
     </Box>

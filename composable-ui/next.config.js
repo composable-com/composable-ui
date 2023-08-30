@@ -40,6 +40,8 @@ module.exports = () => {
     ],
     images: {
       domains: ['loremflickr.com'],
+      formats: ['image/avif', 'image/webp'],
+      minimumCacheTTL: 60 * 60 * 24 * 30,
     },
     i18n: {
       locales: ['en-US'],

@@ -2,7 +2,10 @@ import React from 'react'
 import { render, screen } from 'utils/tests'
 import { api } from 'utils/api'
 import { HomePage } from '../home-page'
+import { mockedIntersectionObserver } from 'components/__mocks__/intersection-observer'
+import { LAZY_LOAD_BATCH_SIZE } from 'utils/constants'
 
+global.IntersectionObserver = mockedIntersectionObserver
 jest.mock('utils/api')
 jest.mock('../cms', () => ({
   BannerFull: jest
@@ -40,16 +43,14 @@ describe('HomePage', () => {
     )
   })
 
-  it('renders cms each item properly', async () => {
+  it('renders first batch of cms items', async () => {
     const items = await screen.findAllByRole('cms-page-item')
 
     const { data } = api.cms.getPage.useQuery({ slug: 'home' })
     if (!data) return
-    const pageItems = data.items
 
-    for (const item of pageItems) {
-      const index = pageItems.indexOf(item)
-      expect(items[index]).toHaveAttribute('data-testid', item.__typename)
+    for (let i = 0; i < LAZY_LOAD_BATCH_SIZE; i++) {
+      expect(items[i]).toHaveAttribute('data-testid', data.items[i].__typename)
     }
   })
 })

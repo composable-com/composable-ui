@@ -26,7 +26,9 @@ export const Composable = ({
         <>
           <GoogleTagManager googleTagManagerId={googleTagManagerId} />
           <ChakraProvider theme={theme}>{children}</ChakraProvider>
-          <ReactQueryDevtools initialIsOpen={false} />
+          {process.env.NODE_ENV === 'development' && (
+            <ReactQueryDevtools initialIsOpen={false} />
+          )}
         </>
       </IntlProvider>
     </ComposableProvider>

@@ -30,3 +30,4 @@ export const ALGOLIA_SORTING_OPTIONS = [
 export const GOOGLE_TAG_MANAGER_ID =
   process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID
 export const PASSWORD_MIN_LENGTH = 8
+export const LAZY_LOAD_BATCH_SIZE = 3
