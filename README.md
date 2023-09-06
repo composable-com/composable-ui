@@ -36,6 +36,7 @@ Start building your dream commerce site today with Composable UI!
     - [1-Click Deployment to Netlify](#1-click-deployment-to-netlify)
 - [What's inside?](#whats-inside)
 - [Next Steps](#next-steps)
+- [How to contribute](#how-to-contribute)
 
 ---
 
@@ -216,3 +217,7 @@ This workspace uses [pnpm](https://pnpm.io/) as a package manager. It includes t
 ## Next Steps
 
 To start with building your next composable commerce site using Composable UI, refer to the official [Composable UI Documentation](https://docs.composable.com)!
+
+## How to contribute
+
+We always seek contributors to help us fix bugs, build new features, or help us improve the project documentation. Check out our [Contributing Guide](/CONTRIBUTING.md) if interested.
