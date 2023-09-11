@@ -36,6 +36,7 @@ Start building your dream commerce site today with Composable UI!
     - [1-Click Deployment to Netlify](#1-click-deployment-to-netlify)
 - [What's inside?](#whats-inside)
 - [Next Steps](#next-steps)
+- [How to Contribute](#how-to-contribute)
 
 ---
 
@@ -58,7 +59,7 @@ Start building your dream commerce site today with Composable UI!
 
 ## Deployment / Installation
 
-There are multiple methods of running and deploying Composable UI. 
+There are multiple methods of running and deploying Composable UI.
 
 Be sure to read the documentation on Composable UI's [environment variables](https://docs.composable.com/docs/essentials/configuration). When deploying to a cloud provider like Vercel or Netlify you must set the `NEXTAUTH_SECRET` environment variable. For more information on Composable UI environment variables, see the [Application Configuration](../essentials/configuration.md) section. See these links on how to set environment variables for [Netlify](https://docs.netlify.com/environment-variables/overview/) and [Vercel](https://vercel.com/docs/concepts/projects/environment-variables).
 
@@ -74,7 +75,7 @@ After installing Composable UI, we recommend also taking a few moments to config
 
 ###  Option 1: Run in Localhost
 
-To run locally, ensure that you have installed: 
+To run locally, ensure that you have installed:
 
 - Node.js v16.18.0 or higher
 - pnpm v8.0 or higher
@@ -216,3 +217,7 @@ This workspace uses [pnpm](https://pnpm.io/) as a package manager. It includes t
 ## Next Steps
 
 To start with building your next composable commerce site using Composable UI, refer to the official [Composable UI Documentation](https://docs.composable.com)!
+
+## How to Contribute
+
+We always seek contributors to help us fix bugs, build new features, or help us improve the project documentation. Check out our [Contributing Guide](/CONTRIBUTING.md) if interested.
