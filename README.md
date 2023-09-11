@@ -36,7 +36,7 @@ Start building your dream commerce site today with Composable UI!
     - [1-Click Deployment to Netlify](#1-click-deployment-to-netlify)
 - [What's inside?](#whats-inside)
 - [Next Steps](#next-steps)
-- [How to contribute](#how-to-contribute)
+- [How to Contribute](#how-to-contribute)
 
 ---
 
