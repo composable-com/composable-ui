@@ -39,7 +39,7 @@ You can host Composable UI Docs on any hosting service that supports Next.js app
 ### 1-Click Deployment to Vercel
 Use the button below to build and deploy your own copy of Composable UI Docs to Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%composable-com%2Fcomposable-ui&root-directory=docs&build-command=cd%20docs%20%26%26%20yarn%20build&install-command=cd%20docs%20%26%26%20yarn%20install&project-name=composable-ui-docs&repository-name=composable-ui&demo-title=Composable%20UI%20docs&demo-description=Docs%20for%20Open%20Source%20React%20Storefront%20for%20Composable%20Commerce&demo-url=https%3A%2F%2Fstorefront.composable.com&demo-image=https%3A%2F%2Fstorefront.composable.com%2Fdemo_image.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%composable-com%2Fcomposable-ui&root-directory=docs&build-command=cd%20docs%20%26%26%20yarn%20build&install-command=cd%20docs%20%26%26%20yarn%20install&project-name=composable-ui-docs&repository-name=composable-ui-docs&demo-title=Composable%20UI%20docs&demo-description=Docs%20for%20Open%20Source%20React%20Storefront%20for%20Composable%20Commerce&demo-url=https%3A%2F%2Fstorefront.composable.com)
 
 ### 1-Click Deployment to Netlify
 Use the button below to build and deploy your own copy of Composable UI Docs to Netlify:
