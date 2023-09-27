@@ -90,7 +90,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'build_and_deploy/deploy_configuration',
+            docId: 'build_and_deploy/deploy',
             position: 'left',
             label: 'Build & Deploy',
           },

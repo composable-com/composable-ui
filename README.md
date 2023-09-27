@@ -24,16 +24,13 @@ Start building your dream commerce site today with Composable UI!
 - [Resources](#resources)
 - [Deployment / Installation](#deployment--installation)
   - [Option 1: Run in Localhost](#option-1-run-in-localhost)
-  - [Option 2: 1-Click Deployment to Vercel](#option-2-1-click-deployment-to-vercel)
-  - [Option 3: 1-Click Deployment to Netlify](#option-3-1-click-deployment-to-netlify)
-  - [Option 4: Run in Docker](#option-4-run-in-docker)
+  - [Option 2: 1-Click Deployments](#option-2-1-click-deployments)
+  - [Option 3: Run in Docker](#option-3-run-in-docker)
 - [Configuring Algolia and Stripe](#configuring-algolia-and-stripe)
   - [Algolia Setup](#algolia-setup)
   - [Stripe Setup](#stripe-setup)
 - [Documentation Installation](#documentation-installation)
-  - [Deployment](#deployment)
-    - [1-Click Deployment to Vercel](#1-click-deployment-to-vercel)
-    - [1-Click Deployment to Netlify](#1-click-deployment-to-netlify)
+  - [Documentation Deployment](#documentation-deployment)
 - [What's inside?](#whats-inside)
 - [Next Steps](#next-steps)
 - [How to Contribute](#how-to-contribute)
@@ -65,9 +62,8 @@ Be sure to read the documentation on Composable UI's [environment variables](htt
 
 <!-- no toc -->
   - [Option 1: Run in Localhost](#option-1-run-in-localhost)
-  - [Option 2: 1-Click Deployment to Vercel](#option-2-1-click-deployment-to-vercel)
-  - [Option 3: 1-Click Deployment to Netlify](#option-3-1-click-deployment-to-netlify)
-  - [Option 4: Run in Docker](#option-4-run-in-docker)
+  - [Option 2: 1-Click Deployment ](#option-2-1-click-deployment)
+  - [Option 3: Run in Docker](#option-3-run-in-docker)
 
 You can host Composable UI on any service that supports Next.js.
 
@@ -93,29 +89,12 @@ pnpm dev
 
 You should now have the Composable UI application running locally. Go to your web browser and navigate to <http://localhost:3000>
 
-### Option 2: 1-Click Deployment to Vercel
+### Option 2: 1-Click Deployments
 
-Use the button below to build and deploy your own copy of Composable UI to Vercel:
+Refer to the [1-Click deployment documentation](https://docs.composable.com/docs/build_and_deploy/deploy#deploy-composable-ui) to quickly and easily deploy Composable UI to a frontend cloud provider.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcomposable-com%2Fcomposable-ui&root-directory=composable-ui&project-name=composable-ui&repository-name=composable-ui&demo-title=Composable%20UI&demo-description=Open%20Source%20React%20Storefront%20for%20Composable%20Commerce&demo-url=https%3A%2F%2Fstorefront.composable.com%2F&demo-image=https%3A%2F%2Fstorefront.composable.com%2Fimg%2Fdemo_image.png&envDescription=Enter%20your%20NEXTAUTH_SECRET.&env=NEXTAUTH_SECRET&envLink=https%3A%2F%2Fnext-auth.js.org%2Fconfiguration%2Foptions%23nextauth_secret)
 
-- You’ll be prompted to authenticate with GitHub and choose a repository name.
-- Vercel will then automatically create a repository in your GitHub account with a copy of the files from the Composable UI repository.
-- You will be prompted to enter a value for the NEXTAUTH_SECRET environment variable. See the NextAuth docs for more information, including a script for how to generate a secure secret that will be used for cookie JWT encryption.
-- Next, it will build and deploy the new site on Vercel.
-
-### Option 3: 1-Click Deployment to Netlify
-
-Use the button below to build and deploy your own copy of Composable UI to Netlify:
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/composable-com/composable-ui&base=composable-ui#PNPM_FLAGS=--shamefully-hoist"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-- You’ll be prompted to authenticate with GitHub and choose a repository name.
-- Netlify will then automatically create a repository in your GitHub account with a copy of the files from the Composable UI repository.
-- You will be prompted to enter a value for the NEXTAUTH_SECRET environment variable. See the NextAuth docs for more information, including a script for how to generate a secure secret that will be used for cookie JWT encryption.
-- Next, it will build and deploy the new site on Netlify.
-
-### Option 4: Run in Docker
+### Option 3: Run in Docker
 
 You can also run the Composable UI app easily using Docker and not worry about local dependencies. If you don't already have Docker installed, first [install Docker](https://docs.docker.com/get-docker/) before proceeding below.
 
@@ -181,17 +160,9 @@ You should now have the Docusaurus application running locally. Go to your web b
 
 Alternatively, you can view the latest documentation directly at <https://docs.composable.com>
 
-### Deployment
+### Documentation Deployment
 
-#### 1-Click Deployment to Vercel
-Use the button below to build and deploy your own copy of Composable UI Docs to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Foriuminc%2Fcomposable-open-labs&root-directory=docs&build-command=cd%20docs%20%26%26%20yarn%20build&install-command=cd%20docs%20%26%26%20yarn%20install&project-name=composable-ui-docs&repository-name=composable-ui&demo-title=Composable%20UI%20docs&demo-description=Docs%20for%20Open%20Source%20React%20Storefront%20for%20Composable%20Commerce&demo-url=https%3A%2F%2Fstorefront.composable.com&demo-image=https%3A%2F%2Fstorefront.composable.com%2Fdemo_image.png)
-
-#### 1-Click Deployment to Netlify
-Use the button below to build and deploy your own copy of Composable UI Docs to Netlify:
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/composable-com/composable-ui&base=docs"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+Refer to [Deploy Composable UI Docs](https://docs.composable.com/docs/build_and_deploy/deploy#deploy-composable-ui-docs) to deploy to a cloud provider.
 
 ---
 
