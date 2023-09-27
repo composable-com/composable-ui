@@ -62,7 +62,7 @@ Be sure to read the documentation on Composable UI's [environment variables](htt
 
 <!-- no toc -->
   - [Option 1: Run in Localhost](#option-1-run-in-localhost)
-  - [Option 2: 1-Click Deployment ](#option-2-1-click-deployment)
+  - [Option 2: 1-Click Deployment ](#option-2-1-click-deployments)
   - [Option 3: Run in Docker](#option-3-run-in-docker)
 
 You can host Composable UI on any service that supports Next.js.
