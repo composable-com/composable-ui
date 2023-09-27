@@ -91,7 +91,7 @@ You should now have the Composable UI application running locally. Go to your we
 
 ### Option 2: 1-Click Deployments
 
-Refer to the [1-Click deployment documentation](https://docs.composable.com/docs/build_and_deploy/deploy##deploy-composable-ui) to quickly and easily deploy Composable UI to a frontend cloud provider.
+Refer to the [1-Click deployment documentation](https://docs.composable.com/docs/build_and_deploy/deploy#deploy-composable-ui) to quickly and easily deploy Composable UI to a frontend cloud provider.
 
 
 ### Option 3: Run in Docker
