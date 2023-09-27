@@ -42,7 +42,7 @@ If you have deployed Composable UI to Vercel or Netlify, you will need to setup 
 - [Setting environment variables in Vercel](https://vercel.com/docs/concepts/projects/environment-variables)
 - [Setting environment variables in Netlify](https://docs.netlify.com/environment-variables/overview/)
 
-See the Composable UI docs for a [1-click deployment](../build_and_deploy/deploy_configuration.md) to Vercel or Netlify.
+See the Composable UI docs for a [1-click deployment](../build_and_deploy/deploy.md) to Vercel or Netlify.
 ### Want to learn how to setup Algolia? 
 See the Composable UI [Algolia Integration](../integrations/search/algolia.md) guide.
 ### Want to learn how to setup Stripe? 
