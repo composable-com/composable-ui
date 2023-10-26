@@ -108,6 +108,7 @@ export const CheckoutProvider = ({ children }: CheckoutProviderProps) => {
    */
 
   const [checkoutState, setCheckoutState] = useState<CheckoutState>({
+    cartId: cart.id || '',
     config: {
       billingSameAsShipping: true,
       gdpr: false,
