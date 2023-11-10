@@ -1,6 +1,6 @@
 import { Cart, CheckoutInput, CommerceService, Order } from '@composable/types'
-import { getCart } from '../../data/persit'
-import { saveOrder } from '../../data/persit'
+import { getCart } from '../../data/mock-storage'
+import { saveOrder } from '../../data/mock-storage'
 import shippingMethods from '../../data/shipping-methods.json'
 import { randomUUID } from 'crypto'
 

@@ -1,5 +1,5 @@
 import { CommerceService } from '@composable/types'
-import { getOrder as getOrerFromStorage } from '../../data/persit'
+import { getOrder as getOrerFromStorage } from '../../data/mock-storage'
 import order from '../../data/order.json'
 import shippingMethods from '../../data/shipping-methods.json'
 

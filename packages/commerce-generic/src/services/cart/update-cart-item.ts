@@ -1,5 +1,5 @@
 import { CommerceService } from '@composable/types'
-import { getCart, saveCart } from '../../data/persit'
+import { getCart, saveCart } from '../../data/mock-storage'
 
 import { calculateCartSummary } from '../../data/generate-cart-data'
 
