@@ -6,7 +6,7 @@ import { InputField } from '@composable/ui'
 import { CHECKOUT_FORM_KEY } from '../constants'
 import { CheckoutInput } from '@composable/types'
 
-type FormData = Omit<CheckoutInput['customer'], 'id' | 'name'>
+type FormData = Omit<CheckoutInput['customer'], 'id' | 'name' | 'cartId'>
 
 type GuestFormProps = Pick<
   UseCheckoutFormProps<FormData>,

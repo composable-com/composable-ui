@@ -1,4 +1,5 @@
 export interface CheckoutInput {
+  cartId: string
   customer: {
     id?: string
     email: string

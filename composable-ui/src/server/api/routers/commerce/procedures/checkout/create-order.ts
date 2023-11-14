@@ -6,6 +6,7 @@ export const createOrder = protectedProcedure
   .input(
     z.object({
       checkout: z.object({
+        cartId: z.string(),
         customer: z.object({
           id: z.string().optional(),
           email: z.string(),
