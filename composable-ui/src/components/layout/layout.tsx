@@ -109,6 +109,7 @@ const FooterMessage = () => {
         <Link
           as={NextLink}
           href={APP_CONFIG.URL}
+          target="_blank"
           textDecor={'underline'}
           prefetch={false}
         >

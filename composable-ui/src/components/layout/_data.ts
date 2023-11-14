@@ -14,7 +14,6 @@ export const cmsNavLinks = [
 ]
 
 export const cmsFooterLinks = {
-  title: 'Hello',
   items: [
     {
       label: 'About',
@@ -22,17 +21,17 @@ export const cmsFooterLinks = {
       children: [
         {
           label: 'About Us',
-          href: '/about-us',
+          href: '/',
           variant: 'light',
         },
         {
           label: 'Store Finder',
-          href: '/store-finder',
+          href: '/',
           variant: 'light',
         },
         {
           label: 'Careers',
-          href: '/careers',
+          href: '/',
           variant: 'light',
         },
       ],
@@ -43,11 +42,11 @@ export const cmsFooterLinks = {
       children: [
         {
           label: 'Shipping & Returns',
-          href: '/shipping-returns',
+          href: '/',
         },
         {
           label: 'Customer FAQs',
-          href: '/customer-faqs',
+          href: '/',
         },
       ],
     },
