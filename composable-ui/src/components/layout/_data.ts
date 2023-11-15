@@ -14,6 +14,7 @@ export const cmsNavLinks = [
 ]
 
 export const cmsFooterLinks = {
+  title: 'footerLinks',
   items: [
     {
       label: 'About',
