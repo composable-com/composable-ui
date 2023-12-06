@@ -10,6 +10,7 @@ export const cartData: CartData = {
       name: 'Venture Daypack',
       brand: 'Riley',
       price: 129,
+      tax: 0.07,
       image: {
         url: '/img/products/_0000s_0001_backpack-rugged-black-front.jpg',
         alt: '',

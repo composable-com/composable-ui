@@ -94,6 +94,7 @@
   "action.updatePassword": "Update Password",
   "action.updateSubscription": "Update Subscription",
   "action.viewCart": "View Cart",
+  "action.addVoucher": "Add Voucher",
 
   "app.failure": "Whoops, something went wrong! If the problem persists, please contact us.",
   "app.loading": "Loading...",
@@ -116,7 +117,11 @@
   "cart.item.totalPrice": "Total Price",
 
   "cart.summary.estimatedTotal": "Estimated Total",
-  "cart.summary.orderTotal": "Order Total",
+  "cart.summary.priceBeforeDiscount": "Order Total",
+  "cart.summary.promotions": "Promotions",
+  "cart.summary.vouchers": "Vouchers",
+  "cart.summary.totalDiscountAmount": "All discounts",
+  "cart.summary.orderTotal": "Grand Total",
   "cart.summary.shipping.complimentaryDelivery": "Complimentary Delivery",
   "cart.summary.shipping.free": "Free",
   "cart.summary.shipping": "Complimentary Delivery",
@@ -125,6 +130,7 @@
   "cart.summary.taxes": "Taxes",
   "cart.summary.title": "Order Summary",
   "cart.summary.total": "Total",
+  "cart.summary.label.voucher": "Voucher code",
 
   "checkout.title": "Checkout",
 

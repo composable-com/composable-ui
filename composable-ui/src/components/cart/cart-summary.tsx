@@ -11,7 +11,7 @@ import {
   StackProps,
   Text,
 } from '@chakra-ui/react'
-import { CartSummaryItem } from '.'
+import { CartSummaryItem, CartPromotions, CartVouchers } from '.'
 
 interface CartSummaryProps {
   rootProps?: StackProps
@@ -28,6 +28,7 @@ export const CartSummary = ({
   const { cart } = useCart()
   const intl = useIntl()
   const _cartData = cartData ?? cart
+  const promotions = _cartData.promotionsApplied || []
 
   return (
     <Stack spacing={{ base: '4', md: '6' }} width="full" {...rootProps}>
@@ -52,6 +53,18 @@ export const CartSummary = ({
               />
             </CartSummaryItem>
           )}
+
+          {_cartData.summary?.taxes && (
+            <CartSummaryItem
+              label={intl.formatMessage({ id: 'cart.summary.taxes' })}
+            >
+              <Price
+                rootProps={{ textStyle: 'Body-S' }}
+                price={_cartData.summary.taxes}
+              />
+            </CartSummaryItem>
+          )}
+
           {_cartData.summary?.shipping && (
             <CartSummaryItem
               label={intl.formatMessage({ id: 'cart.summary.shipping' })}
@@ -62,14 +75,36 @@ export const CartSummary = ({
               />
             </CartSummaryItem>
           )}
-
-          {_cartData.summary?.taxes && (
+          {promotions.length > 0 && (
+            <>
+              <Divider m={'2px 0'} />
+              <CartPromotions promotions={promotions} />
+            </>
+          )}
+          <Divider m={'2px 0'} />
+          <CartVouchers />
+          <Divider />
+          {_cartData.summary?.priceBeforeDiscount && (
             <CartSummaryItem
-              label={intl.formatMessage({ id: 'cart.summary.taxes' })}
+              label={intl.formatMessage({
+                id: 'cart.summary.priceBeforeDiscount',
+              })}
             >
               <Price
                 rootProps={{ textStyle: 'Body-S' }}
-                price={_cartData.summary.taxes}
+                price={`${_cartData.summary.priceBeforeDiscount}`}
+              />
+            </CartSummaryItem>
+          )}
+          {_cartData.summary?.totalDiscountAmount && (
+            <CartSummaryItem
+              label={intl.formatMessage({
+                id: 'cart.summary.totalDiscountAmount',
+              })}
+            >
+              <Price
+                rootProps={{ textStyle: 'Body-S', color: 'green' }}
+                price={`-${_cartData.summary.totalDiscountAmount}`}
               />
             </CartSummaryItem>
           )}

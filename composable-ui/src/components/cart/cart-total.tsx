@@ -1,8 +1,7 @@
 import { useIntl } from 'react-intl'
-import { useRouter } from 'next/router'
 import { CartData, useCart } from 'hooks'
 import { Price } from 'components/price'
-import { Button, Flex, Text, FlexProps } from '@chakra-ui/react'
+import { Flex, Text, FlexProps } from '@chakra-ui/react'
 
 interface CartTotalProps {
   rootProps?: FlexProps
@@ -10,7 +9,6 @@ interface CartTotalProps {
 }
 
 export const CartTotal = ({ cartData, rootProps }: CartTotalProps) => {
-  const router = useRouter()
   const { cart } = useCart()
   const intl = useIntl()
   const _cartData = cartData ?? cart
@@ -26,17 +24,6 @@ export const CartTotal = ({ cartData, rootProps }: CartTotalProps) => {
         <Text>{intl.formatMessage({ id: 'cart.summary.estimatedTotal' })}</Text>
         <Price price={_cartData.summary?.totalPrice ?? ''} />
       </Flex>
-      <Button
-        onClick={() => {
-          router.push('/checkout')
-        }}
-        w={{ base: 'full' }}
-        maxW={{ base: 'full' }}
-        variant={'solid'}
-        size={'lg'}
-      >
-        {intl.formatMessage({ id: 'action.proceedToCheckout' })}
-      </Button>
     </>
   )
 }

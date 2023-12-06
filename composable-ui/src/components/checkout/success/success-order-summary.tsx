@@ -11,7 +11,8 @@ interface OrderSummaryProps {
   deliveryTitle?: string
   delivery: string
   tax: string
-  discount?: string
+  priceBeforeDiscount: string
+  totalDiscountAmount?: string
   total: string
 }
 
@@ -22,7 +23,8 @@ export const SuccessOrderSummary = ({
   deliveryTitle,
   delivery,
   tax,
-  discount,
+  priceBeforeDiscount,
+  totalDiscountAmount,
   total,
 }: OrderSummaryProps) => {
   const intl = useIntl()
@@ -55,7 +57,14 @@ export const SuccessOrderSummary = ({
         deliveryTitle={deliveryTitle}
         delivery={delivery}
         tax={tax}
-        discount={discount}
+        priceBeforeDiscountTitle={intl.formatMessage({
+          id: 'cart.summary.priceBeforeDiscount',
+        })}
+        priceBeforeDiscount={priceBeforeDiscount}
+        totalDiscountAmountTitle={intl.formatMessage({
+          id: 'cart.summary.totalDiscountAmount',
+        })}
+        totalDiscountAmount={totalDiscountAmount}
         totalTitle={intl.formatMessage({
           id: 'checkout.success.orderSummary.totalPaid',
         })}

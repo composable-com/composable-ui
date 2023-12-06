@@ -85,7 +85,7 @@ export const CartDrawer = () => {
           ) : cart.isEmpty ? (
             <CartDrawerEmptyState onClose={cartDrawer.onClose} />
           ) : (
-            <Stack spacing="8">
+            <Stack spacing="4">
               <Stack
                 spacing="8"
                 divider={<Divider />}
