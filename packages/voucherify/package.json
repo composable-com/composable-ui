@@ -1,0 +1,23 @@
+{
+  "name": "@composable/voucherify",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "sideEffects": "false",
+  "scripts": {
+    "build": "echo \"Build script for @composable/voucherify ...\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
+    "ts": "tsc --noEmit --incremental"
+  },
+  "dependencies": {
+    "@composable/types": "workspace:*",
+    "@voucherify/sdk": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "eslint-config-custom": "workspace:*",
+    "ts-node": "^10.9.1",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}
