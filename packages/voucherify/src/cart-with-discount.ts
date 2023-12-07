@@ -61,7 +61,11 @@ const mapRedeemableToPromotion = (
       ? promotionsResult
         ? promotionsResult.promotions?.find(
             (promotion) => promotion.id === redeemable.id
-          )?.banner || ''
+          )?.banner ||
+          promotionsResult.promotions?.find(
+            (promotion) => promotion.id === redeemable.id
+          )?.name ||
+          ''
         : redeemable.id
       : redeemable.id,
 })
