@@ -44,6 +44,7 @@ const voucherifySetup = async () => {
         createdProduct.id,
         {
           sku: product.sku,
+          source_id: product.sku,
         }
       )
 
