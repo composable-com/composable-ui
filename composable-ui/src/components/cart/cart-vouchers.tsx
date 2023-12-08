@@ -20,6 +20,13 @@ export const CartVouchers = () => {
 
   const vouchers = cart.vouchersApplied
 
+  const handleDeleteCartVoucher = (code: string) => {
+    deleteCartVoucher.mutate({
+      cartId: cart.id || '',
+      code: code,
+    })
+  }
+
   return (
     <>
       <CartSummaryItem
@@ -45,12 +52,7 @@ export const CartVouchers = () => {
             <TagLeftIcon boxSize="12px" as={MdDiscount} />
             <TagLabel>{voucher.label}</TagLabel>
             <TagCloseButton
-              onClick={() =>
-                deleteCartVoucher.mutate({
-                  cartId: cart.id || '',
-                  code: voucher.code,
-                })
-              }
+              onClick={() => handleDeleteCartVoucher(voucher.code)}
             />
           </Tag>
           <Box>

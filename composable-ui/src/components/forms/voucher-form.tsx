@@ -6,6 +6,13 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import { useCart } from '../../hooks'
+
+const voucherFormSchema = () => {
+  return yup.object().shape({
+    voucher: yup.string(),
+  })
+}
+
 export const VoucherForm = () => {
   const intl = useIntl()
   const {
@@ -44,22 +51,25 @@ export const VoucherForm = () => {
       login: intl.formatMessage({ id: 'action.addVoucher' }),
     },
   }
+
+  const handleVoucherSubmit = async (data: { voucher: string }) => {
+    setErrorMessage('')
+    if (!data.voucher) {
+      setError('voucher', { message: 'This field cannot be empty.' })
+      return
+    }
+    await addCartVoucher.mutate({
+      cartId: cart.id || '',
+      code: data.voucher,
+    })
+    setValue('voucher', '')
+  }
+
   return (
     <form
       role={'form'}
       aria-label={content.title}
-      onSubmit={handleSubmit(async (data) => {
-        setErrorMessage('')
-        if (!data.voucher) {
-          setError('voucher', { message: 'This field cannot be empty.' })
-          return
-        }
-        await addCartVoucher.mutate({
-          cartId: cart.id || '',
-          code: data.voucher,
-        })
-        setValue('voucher', '')
-      })}
+      onSubmit={handleSubmit(handleVoucherSubmit)}
     >
       <Box
         display={'flex'}
@@ -104,9 +114,4 @@ export const VoucherForm = () => {
       )}
     </form>
   )
-}
-const voucherFormSchema = () => {
-  return yup.object().shape({
-    voucher: yup.string(),
-  })
 }
