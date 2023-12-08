@@ -35,7 +35,7 @@ export const CartSummary = ({
       <Stack bg="shading.100" p={'2rem 1.5rem'}>
         <Text
           as={'h2'}
-          textStyle={{ base: 'Mobile/XS', md: 'Desktop/M' }}
+          textStyle={{ base: 'Mobile/M', md: 'Desktop/M' }}
           fontWeight={900}
           mb="sm"
         >
