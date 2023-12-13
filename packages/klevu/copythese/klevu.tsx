@@ -92,26 +92,15 @@ function CustomGridRenderer(props: { products: KlevuRecord[] }) {
   return (
     <KlevuProductGrid>
       {props.products.map((product) => {
+        // additionalDataToReturn is JSON have been indexed to display key on the product.
+        const originalProductJSON = JSON.parse(
+          product.additionalDataToReturn
+        ).default
         return (
           <KlevuProduct key={product.id} product={product} isWrapper>
             {/* Above: Components should be put inside KlevuProduct that has `isWrapper` prop defined. It means that it's empty shell. */}
             {/* Below: Here you can use your own components */}
-            <CategoryProductCard
-              product={{
-                brand: product.brand,
-                description: product.description,
-                images: [
-                  {
-                    url: product.image,
-                    alt: product.name,
-                  },
-                ],
-                name: product.name,
-                price: product.price,
-                sku: product.sku,
-                slug: product.url,
-              }}
-            />
+            <CategoryProductCard product={originalProductJSON} />
           </KlevuProduct>
         )
       })}

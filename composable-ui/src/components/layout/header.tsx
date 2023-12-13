@@ -10,8 +10,6 @@ import {
   Grid,
   Link,
 } from '@chakra-ui/react'
-import { QuickSearch } from 'components/klevu/klevu'
-
 import { LoginAction } from './login-action'
 import { cmsNavLinks } from './_data'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -30,7 +28,7 @@ export const Header = () => {
     <Box as="header" borderBottomWidth="1px" height={'4rem'}>
       <Container maxW="container.xl">
         <Grid
-          templateColumns={{ base: '1fr 2fr 1fr', md: 'repeat(4, 1fr)' }}
+          templateColumns={'repeat(3, 1fr)'}
           justifyContent={'center'}
           height={'4rem'}
         >
@@ -53,7 +51,6 @@ export const Header = () => {
           </Box>
           <Flex
             alignItems={'center'}
-            display={{ base: 'none', md: 'flex' }}
             justifyContent={{ base: 'center', md: 'left' }}
           >
             <Link as={NextLink} href="/">
@@ -78,9 +75,6 @@ export const Header = () => {
                 />
               )
             })}
-          </Box>
-          <Box display={'flex'} alignItems={'center'} width={'100%'}>
-            <QuickSearch />
           </Box>
           <Box
             display="flex"

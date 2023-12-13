@@ -43,8 +43,6 @@ export const ProductListingPage = ({
   const [productsGridOption, setProductsGridOption] =
     useState<CategoryPageProductGrid>('comfortable')
 
-  return null
-  /*
   return (
     <InstantSearchSSRProvider {...serverState}>
       <InstantSearch searchClient={searchClient} indexName={ALGOLIA_INDEX_NAME}>
@@ -118,5 +116,4 @@ export const ProductListingPage = ({
       </InstantSearch>
     </InstantSearchSSRProvider>
   )
-  */
 }

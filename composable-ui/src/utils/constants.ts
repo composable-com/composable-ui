@@ -31,6 +31,3 @@ export const GOOGLE_TAG_MANAGER_ID =
   process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID
 export const PASSWORD_MIN_LENGTH = 8
 export const LAZY_LOAD_BATCH_SIZE = 3
-
-export const KLEVU_API_KEY = process.env.NEXT_PUBLIC_KLEVU_API_KEY ?? ''
-export const KLEVU_API_URL = process.env.NEXT_PUBLIC_KLEVU_API_URL ?? ''

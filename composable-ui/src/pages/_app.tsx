@@ -10,9 +10,6 @@ import { Composable } from 'components/composable'
 import { Layout } from 'components/layout/layout'
 import { GOOGLE_TAG_MANAGER_ID } from 'utils/constants'
 
-import '@composable/klevu/node_modules/@klevu/ui-react/dist/klevu-ui.css'
-import '@composable/klevu/style.css'
-
 const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
   return (
     <StrictMode>

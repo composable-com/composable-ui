@@ -35,19 +35,28 @@ functionalities.
    cp ../packages/klevu/copythese/klevu.tsx src/components/klevu/klevu.tsx
    ```
 
-5. **Configuring Category Pages:** Copy and replace the `[slug].tsx` file for
+5. **Adding styles:** Add following two imports to `_app.tsx`
+
+   ```typescript
+   import '@composable/klevu/node_modules/@klevu/ui-react/dist/klevu-ui.css'
+   import '@composable/klevu/style.css'
+   ```
+
+   Then you can modify the style in `packages/klevu/style.css`
+
+6. **Configuring Category Pages:** Copy and replace the `[slug].tsx` file for
    category pages:
    ```bash
    cp ../packages/klevu/copythese/[slug].tsx src/pages/category/[slug].tsx
    ```
 
-6. **Setting Up the Search Page:** Copy the `search.tsx` file to set up the
+7. **Setting Up the Search Page:** Copy the `search.tsx` file to set up the
    search functionality:
    ```bash
    cp ../packages/klevu/copythese/search.tsx src/pages/search.tsx
    ```
 
-7. **Adding QuickSearch Component:** Integrate the `QuickSearch` component into
+8. **Adding QuickSearch Component:** Integrate the `QuickSearch` component into
    the header:
    - First, open `composable-ui/src/components/layout/header.tsx`.
    - Import the `QuickSearch` component:
@@ -113,3 +122,9 @@ pnpm run klevu-setup
 
 This command will initiate the script, which interacts with Klevu's API to index
 your site's data, preparing it for an enhanced search experience.
+
+## Getting the `display` key to work
+
+`display` is a special property in the indexing. It can be used to pass any data
+from to the frontend. But for it to work you need contact `support@klevu.com` and
+request `additionalDataToReturn` to be enabled.

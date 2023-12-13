@@ -18,11 +18,11 @@
     "ts": "turbo run ts"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
+    "@babel/core": "^7.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.5.0",
-    "prettier": "^2.8.8",
-    "turbo": "^1.10.16"
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.8.3",
+    "turbo": "^1.7.0"
   },
   "engines": {
     "npm": ">=7.0.0",
