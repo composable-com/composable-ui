@@ -1,5 +1,5 @@
 import { ShippingMethod } from './checkout'
-import { Cart } from './cart'
+import { Cart, Promotion, Voucher } from './cart'
 
 export interface Order {
   id: string
@@ -15,6 +15,8 @@ export interface Order {
   created_at: number
   items: Cart['items']
   summary: Cart['summary']
+  vouchers_applied: Voucher[]
+  promotions_applied: Promotion[]
 }
 
 export interface Address {

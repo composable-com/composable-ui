@@ -83,6 +83,24 @@ export const BagSummaryMobile = ({ accordionProps }: BagSummaryMobileProps) => {
                   parseFloat(_cart?.summary?.taxes ?? '0'),
                   currencyFormatConfig
                 )}
+                priceBeforeDiscountTitle={intl.formatMessage({
+                  id: 'cart.summary.priceBeforeDiscount',
+                })}
+                priceBeforeDiscount={intl.formatNumber(
+                  parseFloat(_cart?.summary?.priceBeforeDiscount ?? '0'),
+                  currencyFormatConfig
+                )}
+                totalDiscountAmountTitle={intl.formatMessage({
+                  id: 'cart.summary.totalDiscountAmount',
+                })}
+                totalDiscountAmount={
+                  _cart?.summary?.totalDiscountAmount
+                    ? intl.formatNumber(
+                        parseFloat(_cart?.summary?.totalDiscountAmount ?? '0'),
+                        currencyFormatConfig
+                      )
+                    : null
+                }
                 totalTitle={intl.formatMessage({
                   id: 'checkout.orderSummary.orderTotal',
                 })}

@@ -30,6 +30,8 @@ const generateOrderFromCart = (
     created_at: Date.now(),
     items: cart.items,
     summary: cart.summary,
+    vouchers_applied: cart.vouchersApplied || [],
+    promotions_applied: cart.promotionsApplied || [],
   }
 }
 
@@ -44,5 +46,7 @@ export const createOrder: CommerceService['createOrder'] = async ({
     )
   }
 
-  return saveOrder(generateOrderFromCart(cart, checkout))
+  const updatedOrder = generateOrderFromCart(cart, checkout)
+
+  return await saveOrder(updatedOrder)
 }

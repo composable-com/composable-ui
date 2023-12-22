@@ -33,6 +33,14 @@ export interface CommerceService {
     quantity: number
   }): Promise<Cart>
 
+  addVoucher(params: { cartId: string; code: string }): Promise<{
+    cart: Cart
+    success: boolean
+    errorMessage?: string
+  }>
+
+  deleteVoucher(params: { cartId: string; code: string }): Promise<Cart>
+
   /**
    * Catalog methods
    */

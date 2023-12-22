@@ -39,7 +39,7 @@ export const OrderSummary = ({
 
   return (
     <Box>
-      <Stack spacing={{ base: 0, md: 8 }}>
+      <Stack spacing={{ base: 0, md: 3 }}>
         {showTitle && (
           <Text textStyle={'Desktop/M'} mb={2}>
             {intl.formatMessage({ id: 'cart.summary.title' })}
@@ -101,8 +101,26 @@ export const OrderSummary = ({
             parseFloat(_cart?.summary?.taxes ?? '0'),
             currencyFormatConfig
           )}
+          priceBeforeDiscountTitle={intl.formatMessage({
+            id: 'cart.summary.priceBeforeDiscount',
+          })}
+          priceBeforeDiscount={intl.formatNumber(
+            parseFloat(_cart?.summary?.priceBeforeDiscount ?? '0'),
+            currencyFormatConfig
+          )}
+          totalDiscountAmountTitle={intl.formatMessage({
+            id: 'cart.summary.totalDiscountAmount',
+          })}
+          totalDiscountAmount={
+            _cart?.summary?.totalDiscountAmount
+              ? intl.formatNumber(
+                  parseFloat(_cart?.summary?.totalDiscountAmount ?? '0'),
+                  currencyFormatConfig
+                )
+              : null
+          }
           totalTitle={intl.formatMessage({
-            id: 'checkout.orderSummary.orderTotal',
+            id: 'cart.summary.orderTotal',
           })}
           total={intl.formatNumber(
             parseFloat(_cart?.summary?.totalPrice ?? '0'),

@@ -37,7 +37,21 @@ interface UseCartOptions {
   onCartItemAddError?: () => void
   onCartItemUpdateError?: () => void
   onCartItemDeleteError?: () => void
+  onCartVoucherAddError?: (errorMessage: string) => void
+  onCartVoucherDeleteError?: () => void
   onCartItemAddSuccess?: (cart: Cart) => void
+  onCartVoucherAddSuccess?: (
+    data: {
+      cart: Cart
+      success: boolean
+    },
+    variables: {
+      cartId: string
+      code: string
+    },
+    context: unknown
+  ) => void
+  onCartVoucherDeleteSuccess?: (cart: Cart) => void
 }
 
 export const useCart = (options?: UseCartOptions) => {
@@ -228,6 +242,105 @@ export const useCart = (options?: UseCartOptions) => {
   )
 
   /**
+   * Cart Voucher Add
+   */
+  const cartVoucherAdd = useMutation(
+    ['cartVoucherAdd'],
+    async (variables: { cartId: string; code: string }) => {
+      const params = {
+        cartId: variables.cartId,
+        code: variables.code,
+      }
+
+      const response = await client.commerce.addVoucher.mutate(params)
+      const updatedAt = Date.now()
+      queryClient.setQueryData(
+        [USE_CART_KEY, variables.cartId, updatedAt],
+        response.cart
+      )
+
+      setCartUpdatedAt(updatedAt)
+
+      if (!response.success && optionsRef.current?.onCartVoucherAddError) {
+        optionsRef.current?.onCartVoucherAddError(
+          response.errorMessage || `Could not add ${variables.code} voucher`
+        )
+      }
+
+      return response
+    },
+    {
+      onError: optionsRef.current?.onCartVoucherAddError,
+    }
+  )
+
+  /**
+   * Cart Voucher Add Mutation
+   */
+  const cartVoucherAddMutation = useCallback(
+    async (params: { cartId: string; code: string }) => {
+      const id = cartId ? cartId : await cartCreate.mutateAsync()
+      cartVoucherAdd.mutate(
+        {
+          cartId: id,
+          code: params.code,
+        },
+        {
+          onSuccess: optionsRef.current?.onCartVoucherAddSuccess,
+        }
+      )
+    },
+    [cartId, cartCreate, cartVoucherAdd]
+  )
+
+  /**
+   * Cart Voucher Delete
+   */
+  const cartVoucherDelete = useMutation(
+    ['cartVoucherDelete'],
+    async (variables: { cartId: string; code: string }) => {
+      const params = {
+        cartId: variables.cartId,
+        code: variables.code,
+      }
+
+      const response = await client.commerce.deleteVoucher.mutate(params)
+      const updatedAt = Date.now()
+
+      queryClient.setQueryData(
+        [USE_CART_KEY, variables.cartId, updatedAt],
+        response
+      )
+
+      setCartUpdatedAt(updatedAt)
+
+      return response
+    },
+    {
+      onError: optionsRef.current?.onCartVoucherDeleteError,
+    }
+  )
+
+  /**
+   * Cart Voucher Delete Mutation
+   */
+  const cartVoucherDeleteMutation = useCallback(
+    async (params: { cartId: string; code: string }) => {
+      const id = cartId ? cartId : await cartCreate.mutateAsync()
+      await cartVoucherDelete.mutate(
+        {
+          cartId: id,
+          code: params.code,
+        },
+        {
+          onSuccess: optionsRef.current?.onCartVoucherDeleteSuccess,
+        }
+      )
+    },
+    [cartId, cartCreate, cartVoucherDelete]
+  )
+
+  /**
    * Cart Item Add Facade
    */
   const addCartItem = {
@@ -249,6 +362,22 @@ export const useCart = (options?: UseCartOptions) => {
   const deleteCartItem = {
     mutate: cartItemDeleteMutation,
     isLoading: cartItemDelete.isLoading,
+  }
+
+  /**
+   * Cart Voucher Add Facade
+   */
+  const addCartVoucher = {
+    mutate: cartVoucherAddMutation,
+    isLoading: cartVoucherAdd.isLoading || cartCreate.isLoading,
+  }
+
+  /**
+   * Cart Voucher Delete Facade
+   */
+  const deleteCartVoucher = {
+    mutate: cartVoucherDeleteMutation,
+    isLoading: cartVoucherDelete.isLoading || cartCreate.isLoading,
   }
 
   /**
@@ -280,6 +409,8 @@ export const useCart = (options?: UseCartOptions) => {
     addCartItem,
     updateCartItem,
     deleteCartItem,
+    addCartVoucher,
+    deleteCartVoucher,
     cart: cartData,
     deleteCart: deleteCartHandler,
   }

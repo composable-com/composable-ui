@@ -5,12 +5,12 @@ import {
   calculateCartSummary,
   generateEmptyCart,
 } from '../../data/generate-cart-data'
+import { updateCartDiscount } from './discount'
 
 export const addCartItem: CommerceService['addCartItem'] = async ({
   cartId,
   productId,
   quantity,
-  variantId,
 }) => {
   const cart = (await getCart(cartId)) || generateEmptyCart(cartId)
 
@@ -24,7 +24,9 @@ export const addCartItem: CommerceService['addCartItem'] = async ({
     const newItem = generateCartItem(productId, quantity)
     cart.items.push(newItem)
   }
+
   cart.summary = calculateCartSummary(cart.items)
 
-  return saveCart(cart)
+  const cartWithDiscount = await updateCartDiscount(cart)
+  return saveCart(cartWithDiscount)
 }
