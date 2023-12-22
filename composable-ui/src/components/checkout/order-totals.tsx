@@ -10,7 +10,7 @@ interface OrderTotalsProps {
   priceBeforeDiscountTitle?: string
   priceBeforeDiscount: string
   totalDiscountAmountTitle?: string
-  totalDiscountAmount?: string
+  totalDiscountAmount?: string | null
   totalTitle?: string
   total?: string
 }

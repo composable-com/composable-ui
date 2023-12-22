@@ -12,7 +12,7 @@ interface OrderSummaryProps {
   delivery: string
   tax: string
   priceBeforeDiscount: string
-  totalDiscountAmount?: string
+  totalDiscountAmount?: string | null
   total: string
 }
 
