@@ -1,11 +1,18 @@
 import { Cart, Voucher, Promotion } from '@composable/types'
 import { centToString, toCent } from './to-cent'
 
-const examplePromotion: Promotion = {
-  id: 'prom_1',
-  label: 'Black Friday 2024 - 10$',
-  discountAmount: '10',
-}
+const examplePromotions: Promotion[] = [
+  {
+    id: 'prom_1',
+    label: 'Black Friday 2024 - 10$',
+    discountAmount: '10',
+  },
+  {
+    id: 'prom_2',
+    label: 'Black Friday 2024 - 5$',
+    discountAmount: '5',
+  },
+]
 
 const vouchersAvailable: Voucher[] = [
   { code: '5$OFF', label: '5 bucks off in winter', discountAmount: '5' },
@@ -21,8 +28,9 @@ export const deleteVoucherFromCart = async (
   const updatedCart = await updateCartDiscount({
     ...cart,
     vouchersApplied: [
-      ...(cart.vouchersApplied?.filter((voucher) => voucher.code !== code) ||
-        []),
+      ...(cart.vouchersApplied?.filter(
+        (voucher) => voucher.code.toLowerCase() !== code.toLowerCase()
+      ) || []),
     ],
   })
   return {
@@ -36,14 +44,20 @@ export const addVoucherToCart = async (
   cart: Cart,
   code: string
 ): Promise<{ cart: Cart; success: boolean; errorMessage?: string }> => {
-  if (cart.vouchersApplied?.some((voucher) => voucher.code === code)) {
+  if (
+    cart.vouchersApplied?.some(
+      (voucher) => voucher.code.toLowerCase() === code.toLowerCase()
+    )
+  ) {
     return {
       cart,
       success: false,
       errorMessage: 'Voucher is already applied',
     }
   }
-  const voucher = vouchersAvailable.find((voucher) => voucher.code === code)
+  const voucher = vouchersAvailable.find(
+    (voucher) => voucher.code.toLowerCase() === code.toLowerCase()
+  )
   if (!voucher) {
     return {
       cart,
@@ -69,14 +83,27 @@ export const updateCartDiscount = async (cart: Cart): Promise<Cart> => {
     cart.vouchersApplied?.reduce((sum, voucher) => {
       return sum + toCent(voucher.discountAmount)
     }, 0) || 0
+
+  const promotionDiscountInCents = examplePromotions.reduce(
+    (sum, promotion) => {
+      return (
+        sum + (promotion.discountAmount ? toCent(promotion.discountAmount) : 0)
+      )
+    },
+    0
+  )
+
   const totalDiscountAmountInCents =
-    toCent(examplePromotion.discountAmount) + voucherDiscountsInCents
+    promotionDiscountInCents + voucherDiscountsInCents
+
   const totalPrice = centToString(
     toCent(cart.summary.priceBeforeDiscount) - totalDiscountAmountInCents
   )
   return {
     ...cart,
-    promotionsApplied: [{ ...examplePromotion }],
+    promotionsApplied: examplePromotions.filter(
+      (promotion) => promotion.discountAmount
+    ),
     vouchersApplied: cart.vouchersApplied,
     summary: {
       ...cart.summary,

@@ -21,7 +21,7 @@ export const CartTotal = ({ cartData, rootProps }: CartTotalProps) => {
         mb={'1rem'}
         {...rootProps}
       >
-        <Text>{intl.formatMessage({ id: 'cart.summary.estimatedTotal' })}</Text>
+        <Text>{intl.formatMessage({ id: 'cart.summary.orderTotal' })}</Text>
         <Price price={_cartData.summary?.totalPrice ?? ''} />
       </Flex>
     </>
