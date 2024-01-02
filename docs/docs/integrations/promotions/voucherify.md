@@ -69,6 +69,20 @@ sequenceDiagram
 - Change the `Application rule` to `Partial - inapplicable (not met criteria) discounts are omitted`
 3. Retrieve your API keys from your Voucherify dashboard and set the following environment variables in `composable-ui/.env` and `scripts/.env` files:
 
+- Go to `Project Settings` in the Voucherify dashboard
+   - Click on your name in the upper right corner.
+   - From the list, select `Project Settings`.
+   - Find the section with `Application Keys`.
+   - Copy or make a note of the `Application ID` and `Secret Key`.
+   - Make a note of your [API endpoint](https://docs.voucherify.io/docs/api-endpoints).
+
+     | Shared Cluster   | Endpoint                        |
+     |------------------|---------------------------------|
+     | Europe (default) | `https://api.voucherify.io`     |
+     | United States    | `https://us1.api.voucherify.io` |
+     | Asia (Singapore) | `https://as1.api.voucherify.io` |
+
+Fill in the following variables with the noted values. The following three environment variables should be in both `composable-ui/.env` and `scripts/.env`.
 ```code
 VOUCHERIFY_API_URL=https://api.voucherify.io
 VOUCHERIFY_APPLICATION_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
@@ -78,10 +92,23 @@ VOUCHERIFY_SECRET_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
 **Caution:** Ensure you never expose your Voucherify API keys in the NEXT_PUBLIC_* environment variables or client-side code. Take the necessary steps to ensure that secret keys are never disclosed to the public.
 
 
-### Populating the Products Using the Script
+### Populating the Products Using the Script (optional)
+
+Running a script that adds products to Voucherify is optional. Without running it, you will still be able to perform validation and redemption.
+However, it may be required in the future if other types of discounts are implemented.
+
+**Note:** If you are using the free plan and sandbox project, keep in mind that it has a limit of 100 API calls per hour. 
+With the basic plan you should be able to perform the `voucherify-preconfigure` action without any problems. 
+However, on subsequent attempts to add products, you may get an error: `429 - TOO_MANY_REQUESTS`.
+In this situation, you will only be able to make further attempts in the next hour. You can also use the app without adding products.
+
+
+> **_NOTE:_**  If you are using the Free plan and Sandbox project, keep in mind that it has a limit of 100 API calls per hour.
+With the basic plan you should be able to perform the `voucherify-preconfigure` action without any problems.
+However, on subsequent attempts to add products, you may get an error: `429 - TOO_MANY_REQUESTS`.
+In this situation, you will only be able to make further attempts in the next hour. You can also use the app without adding products - in this situation, skip this section.
 
 To configure product base promotions in Voucherify, propagate product definitions to your Voucherify account:
-
 1. Open the terminal and navigate to the `scripts` directory.
 2. In the `scripts` directory, run the following command:
   ```
