@@ -67,7 +67,7 @@ sequenceDiagram
 - Select `Stacking rules`
 - In `Discounts' application rules` select `Edit settings`
 - Change the `Application rule` to `Partial - inapplicable (not met criteria) discounts are omitted`
-3. Retrieve your API keys from your Voucherify dashboard and set the following environment variables:
+3. Retrieve your API keys from your Voucherify dashboard and set the following environment variables in `composable-ui/.env` and `scripts/.env` files:
 
 ```code
 VOUCHERIFY_API_URL=https://api.voucherify.io
@@ -89,7 +89,7 @@ To configure product base promotions in Voucherify, propagate product definition
   ```
 3. To set up Voucherify, run the following command:
   ```
-  pnpm voucherify-setup
+  pnpm voucherify-preconfigure
   ```
 
 ###  Enabling the use of Voucherify in the store
