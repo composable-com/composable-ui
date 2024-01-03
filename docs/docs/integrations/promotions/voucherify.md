@@ -97,12 +97,6 @@ VOUCHERIFY_SECRET_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx
 Running a script that adds products to Voucherify is optional. Without running it, you will still be able to perform validation and redemption.
 However, it may be required in the future if other types of discounts are implemented.
 
-**Note:** If you are using the free plan and sandbox project, keep in mind that it has a limit of 100 API calls per hour. 
-With the basic plan you should be able to perform the `voucherify-preconfigure` action without any problems. 
-However, on subsequent attempts to add products, you may get an error: `429 - TOO_MANY_REQUESTS`.
-In this situation, you will only be able to make further attempts in the next hour. You can also use the app without adding products.
-
-
 > **_NOTE:_**  If you are using the Free plan and Sandbox project, keep in mind that it has a limit of 100 API calls per hour.
 With the basic plan you should be able to perform the `voucherify-preconfigure` action without any problems.
 However, on subsequent attempts to add products, you may get an error: `429 - TOO_MANY_REQUESTS`.
