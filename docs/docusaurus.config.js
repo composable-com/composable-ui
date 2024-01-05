@@ -16,6 +16,10 @@ if (process.env.GOOGLE_TAG_MANAGER_ID) {
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   title: 'Composable UI',
   tagline: 'Open Source React Storefront for Composable Commerce',
   url: 'https://docs.composable.com',
