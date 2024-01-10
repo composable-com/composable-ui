@@ -1,0 +1,30 @@
+{
+  "name": "@composable/klevu",
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "sideEffects": "false",
+  "scripts": {
+    "build": "echo \"Build script for @composable/stripe ...\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
+    "ts": "tsc --noEmit --incremental",
+    "copyfiles": "cd ../../composable-ui/ && cp -R node_modules/@klevu/ui/dist/klevu-ui/assets/ public/assets/ && mkdir -p src/components/klevu && cp ../packages/klevu/copythese/klevu.tsx src/components/klevu/klevu.tsx && cp ../packages/klevu/copythese/\\[slug\\].tsx src/pages/category/\\[slug\\].tsx && cp ../packages/klevu/copythese/search.tsx src/pages/search.tsx && cp ../packages/klevu/copythese/klevustyle.css src"
+  },
+  "dependencies": {
+    "@composable/types": "workspace:*",
+    "@chakra-ui/react": "^2.8.0",
+    "@klevu/core": "^4.0.0",
+    "@klevu/ui": "^0.10.4",
+    "@klevu/ui-react": "^0.10.4",
+    "react": "^18.2.0",
+    "next": "^13.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.9",
+    "@types/qs": "^6.9.10",
+    "@types/react": "^18.2.37",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  }
+}
