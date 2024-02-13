@@ -3,7 +3,7 @@ import { ProductCard } from '@composable/ui'
 import { useRouter } from 'next/router'
 
 export interface GenericConnectorProps {
-  sectionTitle?: string
+  title?: string
   ctaLabel?: string
   ctaHref?: string
   ctaHeight?: string
@@ -30,7 +30,7 @@ export interface PriceProps {
 
 export const CommerceConnector = (props: GenericConnectorProps) => {
   const {
-    sectionTitle,
+    title,
     ctaLabel,
     ctaHref,
     products,
@@ -48,8 +48,8 @@ export const CommerceConnector = (props: GenericConnectorProps) => {
         <Flex
           gap={{ base: '0.5rem', md: '0.625rem' }}
           mb={{
-            base: sectionTitle && ctaHref ? '8' : undefined,
-            md: sectionTitle && ctaHref ? '12' : undefined,
+            base: title && ctaHref ? '8' : undefined,
+            md: title && ctaHref ? '12' : undefined,
           }}
           justifyContent={'space-between'}
         >
@@ -58,7 +58,7 @@ export const CommerceConnector = (props: GenericConnectorProps) => {
             textStyle={{ base: 'Body-L', md: 'Body-XL' }}
             color={'primary'}
           >
-            {sectionTitle}
+            {title}
           </Text>
           {ctaLabel && ctaHref && (
             <Button onClick={() => router.push(ctaHref)}>{ctaLabel}</Button>

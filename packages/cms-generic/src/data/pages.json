@@ -201,8 +201,6 @@
         "containerMarginBottom": "5",
         "containerMarginTop": "5",
         "containerSize": "full",
-        "ctaMaxWidth": "362px",
-        "ctaMinWidth": "290px",
         "id": "44968ea0-70f9-494f-b88c-d7ffe4804597",
         "products": [
           {
@@ -269,8 +267,7 @@
             },
             "slug": "casual-short-sleeve-dress-in-bone"
           }
-        ],
-        "title": "Women collections"
+        ]
       },
       {
         "__typename": "BannerTextOnly",
