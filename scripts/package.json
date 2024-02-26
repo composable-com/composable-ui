@@ -16,7 +16,7 @@
     "@voucherify/sdk": "^2.5.0"
   },
   "dependencies": {
-    "@klevu/indexing": "^0.0.1",
+    "@klevu/indexing": "^0.0.2",
     "algoliasearch": "^4.14.3",
     "dotenv": "^16.0.3"
   }

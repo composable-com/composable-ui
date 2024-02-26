@@ -117,7 +117,6 @@ const klevuSetup = async () => {
           type: 'KLEVU_PRODUCT',
           relations: {
             categories: {
-              type: 'KLEVU_CATEGORY',
               values: [cagegoryNameMap[product.category].id],
             },
           },

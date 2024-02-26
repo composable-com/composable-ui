@@ -414,8 +414,8 @@ importers:
   scripts:
     dependencies:
       '@klevu/indexing':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: ^0.0.2
+        version: 0.0.2
       algoliasearch:
         specifier: ^4.14.3
         version: 4.16.0
@@ -4020,8 +4020,8 @@ packages:
     resolution: {integrity: sha512-McO1ggUMyxXCEgQ/1MY6of3G3ITcQgVMqV/qSC4nMCX5mUzQofdsoFhnVVRh1SYcE/39PE4Igwsmj2QzIcukQA==}
     dev: false
 
-  /@klevu/indexing@0.0.1:
-    resolution: {integrity: sha512-VYyRplyPP9bavRMUtJwDTQ2cjkHOf1PrU+3EFbt2bA2FmBaC2R14ZQ08et8Q6e/q2DcOqQZC4nZHPBksHeGU5Q==}
+  /@klevu/indexing@0.0.2:
+    resolution: {integrity: sha512-8vYwQIQw8OUAHYRmX+2nlUek0uIlcTe4Q0hl2XkBOQrTVO0BtF+sf/bVokb3kBgXEVFaKnI2QnMKKUcwpgUyDw==}
     dependencies:
       crypto-js: 4.2.0
     dev: false
