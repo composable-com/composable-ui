@@ -13,9 +13,9 @@
   "dependencies": {
     "@composable/types": "workspace:*",
     "@chakra-ui/react": "^2.8.0",
-    "@klevu/core": "^4.0.0",
-    "@klevu/ui": "^0.10.4",
-    "@klevu/ui-react": "^0.10.4",
+    "@klevu/core": "^5.0.0",
+    "@klevu/ui": "^2.0.0",
+    "@klevu/ui-react": "^2.0.0",
     "react": "^18.2.0",
     "next": "^13.3.1"
   },
