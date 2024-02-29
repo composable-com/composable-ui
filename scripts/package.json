@@ -6,7 +6,8 @@
     "algolia-setup": "ts-node src/algolia-setup/index.ts",
     "voucherify-preconfigure": "ts-node src/voucherify-setup/index.ts",
     "voucherify-activate": "ts-node src/voucherify-setup/activate.ts",
-    "voucherify-deactivate": "ts-node src/voucherify-setup/deactivate.ts"
+    "voucherify-deactivate": "ts-node src/voucherify-setup/deactivate.ts",
+    "klevu-setup": "ts-node src/klevu-setup/index.ts"
   },
   "devDependencies": {
     "@types/node": "^18.6.3",
@@ -15,6 +16,7 @@
     "@voucherify/sdk": "^2.5.0"
   },
   "dependencies": {
+    "@klevu/indexing": "^0.0.2",
     "algoliasearch": "^4.14.3",
     "dotenv": "^16.0.3"
   }
