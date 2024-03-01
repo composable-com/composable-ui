@@ -12,12 +12,9 @@
   },
   "dependencies": {
     "@composable/types": "workspace:*",
-    "@chakra-ui/react": "^2.8.0",
     "@klevu/core": "^5.0.0",
     "@klevu/ui": "^2.0.0",
-    "@klevu/ui-react": "^2.0.0",
-    "react": "^18.2.0",
-    "next": "^13.3.1"
+    "@klevu/ui-react": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.18.9",
@@ -26,5 +23,10 @@
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^2.8.0",
+    "react": "^18.2.0",
+    "next": "13.5.4"
   }
 }

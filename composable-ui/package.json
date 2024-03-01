@@ -38,7 +38,7 @@
     "algoliasearch": "^4.14.3",
     "focus-visible": "^5.2.0",
     "framer-motion": "^7.1.0",
-    "next": "^13.3.1",
+    "next": "13.5.4",
     "next-auth": "^4.20.1",
     "next-seo": "^5.5.0",
     "next-sitemap": "^3.1.52",
