@@ -1,9 +1,0 @@
-{
-  "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": [".turbo", "dist", "tmp", "node_modules", "tsconfig.tsbuildinfo"],
-  "compilerOptions": {
-    "resolveJsonModule": true,
-    "jsx": "react"
-  }
-}
