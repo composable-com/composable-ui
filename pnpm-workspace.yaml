@@ -2,7 +2,6 @@ packages:
   # include apps and packages
   - 'composable-ui'
   - 'packages/**'
-  - '!packages/klevu'
   - 'storybook'
   - 'scripts'
   # if required, exclude some directories
