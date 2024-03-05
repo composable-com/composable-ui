@@ -16,3 +16,8 @@ package = "@netlify/plugin-nextjs"
 [template.environment]
 # For 1 click deploy to Netlify.
 NEXTAUTH_SECRET = "This is used for encryption of JWT cookies. See https://next-auth.js.org/configuration/options#nextauth_secret for more information"
+
+[functions]
+  included_files = [
+  "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/amp-context*"
+]
