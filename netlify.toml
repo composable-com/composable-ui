@@ -15,9 +15,9 @@ package = "@netlify/plugin-nextjs"
 
 [functions]
 included_files = [
-  "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/router-context*",
-  "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/amp-context*",
-  "node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/head-manager-context*",
+  "composable-ui/node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/router-context*",
+  "composable-ui/node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/amp-context*",
+  "composable-ui/node_modules/next/dist/server/future/route-modules/pages/vendored/contexts/head-manager-context*",
 ]
 
 [template.environment]
