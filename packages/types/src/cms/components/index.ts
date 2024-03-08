@@ -1,3 +1,4 @@
+export * from './article-card'
 export * from './banner-full'
 export * from './banner-split'
 export * from './banner-text-only'
