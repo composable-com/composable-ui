@@ -1,12 +1,18 @@
-import { createTRPCRouter, publicProcedure } from '../trpc'
 import { getPage } from '@composable/cms-generic'
-import { PageProps } from '@composable/types'
+import { PageSchema } from '@composable/types'
 import { z } from 'zod'
+import { createTRPCRouter, publicProcedure } from '../trpc'
 
 export const cmsRouter = createTRPCRouter({
   getPage: publicProcedure
     .input(z.object({ slug: z.string() }))
     .query(async ({ input }) => {
-      return getPage({ pageSlug: input.slug }) as PageProps
+      try {
+        const page = await getPage({ pageSlug: input.slug })
+        return PageSchema.parse(page)
+      } catch (err) {
+        console.log(err)
+        return null
+      }
     }),
 })
