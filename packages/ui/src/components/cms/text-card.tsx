@@ -48,19 +48,15 @@ export const TextCard = ({
       {...root}
     >
       {image?.src && (
-        <Box mb={6}>
-          <AspectRatio
-            ratio={1}
-            position="relative"
-            width="50px"
-            overflow="hidden"
-            mb={3}
-          >
-            <Image src={image.src} alt={image?.alt ?? ''} fill />
-          </AspectRatio>
+        <Box mb={6} position="relative">
+          <Image
+            src={image.src}
+            alt={image?.alt ?? ''}
+            width={50}
+            height={50}
+          />
         </Box>
       )}
-
       {title?.children && (
         <Box
           textStyle={['Desktop/Default', null, 'Desktop/M']}
