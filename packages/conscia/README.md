@@ -1,5 +1,6 @@
 # Integrating Conscia Components into Composable-UI
 
+Read more about the Conscia.ai composable orchestration integration with Composable UI and what it accomplishes [here](https://docs.composable.com/docs/integrations/orchestration/conscia).
 
 # Installation and Setup
 
