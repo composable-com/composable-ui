@@ -13,7 +13,7 @@ To extend the storefront to pull in content from Conscia's DXO, a package called
 ### Set Up
 
 1. Gain access to a Conscia sandbox. (These are currently only available to SIs. Please talk to your partner manager about getting access to a sandbox.)
-1. Refer to the Conscia package [README](../../../../packages/conscia/README.md) to complete set up. 
+1. Refer to the Conscia package [README](https://github.com/composable-com/composable-ui/blob/main/packages/conscia/README.md) to complete set up. 
 
 ### Exploring the Conscia Sandbox
 
