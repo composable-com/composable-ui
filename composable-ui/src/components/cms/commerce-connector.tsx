@@ -1,34 +1,9 @@
 import { Button, Container, Flex, HStack, Text } from '@chakra-ui/react'
+import { CommerceConnectorProps, PriceProps } from '@composable/types'
 import { ProductCard } from '@composable/ui'
 import { useRouter } from 'next/router'
 
-export interface GenericConnectorProps {
-  title?: string
-  ctaLabel?: string
-  ctaHref?: string
-  ctaHeight?: string
-  ctaMaxWidth?: string
-  ctaMinWidth?: string
-  products?: {
-    name: string
-    slug: string
-    brand?: string
-    img?: {
-      url?: string
-      alt?: string
-    }
-    price?: PriceProps
-  }[]
-}
-
-export interface PriceProps {
-  current: number
-  currentFormatted: string
-  regular?: number
-  regularFormatted?: string
-}
-
-export const CommerceConnector = (props: GenericConnectorProps) => {
+export const CommerceConnector = (props: CommerceConnectorProps) => {
   const {
     title,
     ctaLabel,
