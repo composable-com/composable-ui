@@ -288,7 +288,9 @@ export const LoginForm = ({
                     paddingTop={10}
                     spacing={6}
                   >
-                    <Text textStyle={'Desktop/M'}>{content.notAMemberYet}</Text>
+                    <Text textStyle={'Desktop/M'} pt={2} pb={4}>
+                      {content.notAMemberYet}
+                    </Text>
                     <Button
                       size={{ base: 'md', md: 'lg' }}
                       variant={'outline'}

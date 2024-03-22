@@ -14,8 +14,8 @@ const HEADERS = {
   // 'Content-Security-Policy': ;
   // Be sure to set your Content-Security-Policy (CSP) based on your desired security practices.
   // Read more about CSP and the available directives on https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
-  'Permissions-Policy':
-    'camera=(self), microphone=(self), geolocation=(self), interest-cohort=(self)',
+  // For example, if you want to ensure only the site itself can use your camera and microphone, you can add the following to the Permissions-Policy: camera=(self), microphone=(self)
+  'Permissions-Policy': 'geolocation=(self), interest-cohort=(self)',
 }
 
 module.exports = () => {

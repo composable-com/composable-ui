@@ -1,22 +1,21 @@
 {
-  "name": "@composable/voucherify",
+  "name": "@composable/conscia",
   "version": "0.0.0",
   "main": "./index.ts",
   "types": "./index.ts",
   "sideEffects": "false",
   "scripts": {
-    "build": "echo \"Build script for @composable/voucherify ...\"",
+    "build": "echo \"Build script for @composable/conscia ...\"",
     "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
     "ts": "tsc --noEmit --incremental"
   },
   "dependencies": {
     "@composable/types": "workspace:*",
-    "@voucherify/sdk": "^2.6.0"
+    "axios": "0.26.1"
   },
   "devDependencies": {
     "@types/node": "^18.6.3",
     "eslint-config-custom": "workspace:*",
-    "ts-node": "^10.9.1",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.5"
   }
