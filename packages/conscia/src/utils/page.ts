@@ -30,7 +30,9 @@ export const transformPage = ({
   return {
     __typename: 'pageSlug',
     id: pageSlug,
-    items: Object.values(consciaPage.components).map(transformPageComponent),
+    items: Object.values(consciaPage.components)
+      .map(transformPageComponent)
+      .sort(consciaPage.components.response.sort_order),
     metaDescription: '',
     metaKeywords: [],
     metaTitle: '',
@@ -83,6 +85,7 @@ const transformHeroBanner = (
     isFullScreen: false,
     isLazy: false,
     title: heroBanner.title,
+    sort_order: heroBanner.sort_order,
   }
 }
 
@@ -111,6 +114,7 @@ const transformCTABanner = (ctaBanner: ConsciaCTABanner): BannerFullProps => {
     imageMobile: image,
     linkHref1: ctaBanner.linkHref1,
     linkLabel1: ctaBanner.linkLabel1,
+    sort_order: ctaBanner.sort_order,
   }
 }
 
@@ -125,6 +129,7 @@ const transformFeatureCardsHeader = (
     title: featureCardsHeader.title,
     ctaAlphaLabel: featureCardsHeader.ctaAlphaLabel,
     ctaAlphaHref: featureCardsHeader.ctaAlphaHref,
+    sort_order: featureCardsHeader.sort_order,
   }
 }
 
@@ -145,6 +150,7 @@ const transformFeaturedProducts = (
       img: product.image,
     })),
     productListType: 'id',
+    sort_order: featuredProducts.sort_order,
   }
 }
 
@@ -163,6 +169,7 @@ const transformGrid = (grid: ConsciaGrid): GridProps => {
           return transformTextCard(item)
       }
     }),
+    sort_order: grid.sort_order,
   }
 }
 
@@ -181,5 +188,6 @@ const transformTextCard = (textCard: ConsciaTextCard): TextCardProps => {
     ctaHref: textCard.ctaHref,
     theme: textCard.theme,
     textAlign: textCard.textAlign,
+    sort_order: textCard.sort_order,
   }
 }

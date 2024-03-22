@@ -1,4 +1,4 @@
-import { getPage } from '@composable/cms-generic'
+import { getPage } from '@composable/conscia'
 import { PageSchema } from '@composable/types'
 import { z } from 'zod'
 import { createTRPCRouter, publicProcedure } from '../trpc'

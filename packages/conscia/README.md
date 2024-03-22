@@ -36,3 +36,12 @@ In order to use data from Conscia, the `cmsRouter` needs to use the `getPage` da
    import { getPage } from '@composable/conscia'
    ```
 
+:::note
+Don't forget to update the `composable-ui/next.config.js` file with the image domains that you will be receiving. For example, 
+
+```json
+images: {
+      domains: ['loremflickr.com', 'images.contentstack.io', ...]
+}
+```
+:::

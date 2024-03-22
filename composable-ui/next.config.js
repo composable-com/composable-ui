@@ -39,7 +39,12 @@ module.exports = () => {
       '@composable/ui',
     ],
     images: {
-      domains: ['loremflickr.com'],
+      domains: [
+        'loremflickr.com',
+        'images.contentstack.io',
+        'images.ctfassets.net',
+        'zzyz-001.dx.commercecloud.salesforce.com',
+      ],
       formats: ['image/avif', 'image/webp'],
       minimumCacheTTL: 60 * 60 * 24 * 30,
     },

@@ -21,6 +21,7 @@
     "@chakra-ui/theme-tools": "^2.0.16",
     "@composable/cms-generic": "workspace:*",
     "@composable/commerce-generic": "workspace:*",
+    "@composable/conscia": "workspace:^",
     "@composable/stripe": "workspace:*",
     "@composable/types": "workspace:*",
     "@composable/ui": "workspace:*",

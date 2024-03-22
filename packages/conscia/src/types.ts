@@ -42,10 +42,12 @@ export type ConsciaHeroBanner = {
     description: string
     url: string
   }
+  sort_order?: number
 }
 
 export type ConsciaCTABanner = {
   __typename: BannerFullProps['__typename']
+  sort_order?: number
   containerMarginBottom?: number
   containerMarginTop?: number
   containerSize: BannerFullProps['containerSize']
@@ -67,6 +69,7 @@ export type ConsciaCTABanner = {
 
 export type ConsciaFeatureCardsHeader = {
   __typename: BannerTextOnlyProps['__typename']
+  sort_order?: number
   centered: BannerTextOnlyProps['centered']
   id: BannerTextOnlyProps['id']
   content: BannerTextOnlyProps['content']
@@ -77,6 +80,7 @@ export type ConsciaFeatureCardsHeader = {
 
 export interface ConsciaFeaturedProducts {
   __typename: CommerceConnectorProps['__typename']
+  sort_order?: number
   id: CommerceConnectorProps['id']
   title: CommerceConnectorProps['title']
   containerMarginBottom?: number
@@ -91,6 +95,7 @@ export interface ConsciaFeaturedProducts {
 
 export type ConsciaGrid = {
   __typename: GridProps['__typename']
+  sort_order?: number
   id: GridProps['id']
   columns: GridProps['columns']
   containerMarginBottom?: number
@@ -102,6 +107,7 @@ export type ConsciaGrid = {
 
 export type ConsciaTextCard = {
   __typename: TextCardProps['__typename']
+  sort_order?: number
   id: TextCardProps['id']
   title: TextCardProps['title']
   image: {
