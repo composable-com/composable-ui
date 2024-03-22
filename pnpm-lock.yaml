@@ -41,9 +41,6 @@ importers:
       '@composable/commerce-generic':
         specifier: workspace:*
         version: link:../packages/commerce-generic
-      '@composable/conscia':
-        specifier: workspace:^
-        version: link:../packages/conscia
       '@composable/stripe':
         specifier: workspace:*
         version: link:../packages/stripe
