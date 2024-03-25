@@ -39,9 +39,13 @@ module.exports = () => {
       '@composable/ui',
     ],
     images: {
-      domains: ['loremflickr.com'],
-      formats: ['image/avif', 'image/webp'],
-      minimumCacheTTL: 60 * 60 * 24 * 30,
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: '*.example.com',
+          port: '',
+        },
+      ],
     },
     i18n: {
       locales: ['en-US'],
