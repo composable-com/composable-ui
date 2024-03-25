@@ -30,7 +30,11 @@ export const transformPage = ({
   return {
     __typename: 'pageSlug',
     id: pageSlug,
-    items: Object.values(consciaPage.components).map(transformPageComponent),
+    items: Object.values(consciaPage.components)
+      .sort((a, b) => {
+        return (a.response.sort_order ?? 0) - (b.response.sort_order ?? 0)
+      })
+      .map(transformPageComponent),
     metaDescription: '',
     metaKeywords: [],
     metaTitle: '',
