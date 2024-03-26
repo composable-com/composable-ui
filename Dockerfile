@@ -1,4 +1,6 @@
-FROM node:18-alpine
+FROM node:18-bookworm
+# For an in depth guide on configuring the base node image, see the official Next.js with-docker example here:
+# https://github.com/vercel/next.js/tree/canary/examples/with-docker
 
 RUN npm install -g pnpm
 
