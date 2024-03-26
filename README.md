@@ -73,7 +73,7 @@ After installing Composable UI, we recommend also taking a few moments to config
 
 To run locally, ensure that you have installed:
 
-- Node.js v16.18.0 or higher
+- Node.js v18.14.0 or higher
 - pnpm v8.0 or higher
 
 For more information about the installation, see the [Installation page](https://docs.composable.com/docs/getting_started/installation) section.
