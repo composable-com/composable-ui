@@ -44,8 +44,9 @@ Ensure that you have installed the following on the local development machine:
 ### Installation Steps
 
 1. Clone the [source repository](https://github.com/composable-com/composable-ui) to your local development environment.
+   `git clone https://github.com/composable-com/composable-ui`
 2. Follow the instructions in the [README](https://github.com/composable-com/composable-ui#readme) for local setup and configuration.
-3. Optionally, follow the instructions in the [README](https://github.com/composable-com/composable-ui#readme) to deploy Composable UI to a hosting provider.
+3. Optionally, follow the instructions on [docs.composable.com](https://docs.composable.com/docs/build_and_deploy/deploy#deploy-composable-ui) to deploy Composable UI to a hosting provider.
 
 Be sure to read the documentation on Composable UI's [environment variables](/docs/essentials/configuration)
 
