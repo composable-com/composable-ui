@@ -14,11 +14,9 @@ These pre-built components and design resources help you to save time and effort
 
 Composable UI provides React components and layouts that you can use to build your e-commerce solution.
 
-The `@composable/ui` package, which is in the `packages/ui` directory, contains standard re-usable components, such as accordions, alert boxes, carousels, gallery, and product cards. The components in the `composable-ui` directory leverages the components in the `packages/ui` directory to build more complex components, such as the cart page, menu, Product Listing Pages (PLP), and Product Display Pages (PDP).
+Located in the `packages/ui` directory, the `@composable/ui` workspace package contains standard re-usable UI components, such as accordions, alert boxes, carousels, gallery, and product cards. The Next.js storefront application in directory `composable-ui` uses the basic UI components from `@composable/ui` to construct user experiences and components, such as the Cart Drawer, Mobile Menu, Product Listing Pages (PLP), Product Display Pages (PDP), and Checkout.
 
-The `packages/ui` directory is exported as `@composable/ui` and you can import it in the code as required. The `@composable/ui` package contains the UI components and you can share these components between both Next.js Composable UI application and the Storybook application.
-
-Composable UI uses [Chakra UI](https://chakra-ui.com) as the base component library and as the building block for additional components. Using Chakra UI in your commerce solution enables you to take advantage of a React-based system with accessibility features, customizability, and a large community of developers.
+Composable UI uses [Chakra UI](https://chakra-ui.com) to construct all the components and experiences on the Composable UI Storefront. Using Chakra UI enables us to take advantage of a large React UI component library that provides excellent support for accessibility, customization, and support from large community of developers.
 
 ## Using a component
 
