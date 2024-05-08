@@ -19,10 +19,12 @@ export const isValidCSRFToken = (opts: CreateNextContextOptions) => {
   const csrfTokenHeader = req.headers['x-csrf-token']
 
   console.log({
+    log: 'authutils.ts',
     headers: req.headers,
   })
 
   console.log({
+    log: 'authutils.ts',
     cookieName: getCRSFCookieInfo(req).cookieName,
     csrfCookie,
     csrfTokenHeader,
