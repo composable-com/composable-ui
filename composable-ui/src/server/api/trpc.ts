@@ -57,8 +57,6 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
 
   if (!isValidCSRFToken(opts)) {
     // compare x-csrf-token Header with the NextAuth CSRF token a Cookie to verify this is a valid request
-    console.log('failed to validate CSRF token')
-
     throw new TRPCError({
       code: 'UNAUTHORIZED',
     })

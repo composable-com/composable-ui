@@ -18,18 +18,6 @@ export const isValidCSRFToken = (opts: CreateNextContextOptions) => {
   const csrfCookie = req.cookies[getCRSFCookieInfo(req).cookieName]
   const csrfTokenHeader = req.headers['x-csrf-token']
 
-  console.log({
-    log: 'authutils.ts',
-    headers: req.headers,
-  })
-
-  console.log({
-    log: 'authutils.ts',
-    cookieName: getCRSFCookieInfo(req).cookieName,
-    csrfCookie,
-    csrfTokenHeader,
-  })
-
   if (!csrfCookie) {
     //if the browser is not passing a csrfCookie, then we should not proceed with this request
     return false
@@ -39,8 +27,6 @@ export const isValidCSRFToken = (opts: CreateNextContextOptions) => {
   const expectedCsrfTokenHash = createHash(
     `${csrfTokenHeader}${process.env.NEXTAUTH_SECRET}`
   )
-
-  console.log({ csrfTokenHash, expectedCsrfTokenHash })
 
   if (csrfTokenHash === expectedCsrfTokenHash) {
     // if the CSRF token in the Header matches the CSRF in the Cookie, then we can proceed

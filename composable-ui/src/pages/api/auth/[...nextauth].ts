@@ -13,13 +13,6 @@ const authOptions = async (req: NextApiRequest, res: NextApiResponse) => {
     actionList?.includes('credentials') ||
     actionList?.includes('anon')
   ) {
-    console.log({
-      log: '[...nextauth]',
-      actionList,
-      headers: req.headers,
-      cookie: getCRSFCookieInfo(req).cookieExpire,
-    })
-
     res.setHeader('Set-Cookie', getCRSFCookieInfo(req).cookieExpire)
   }
 
