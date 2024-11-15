@@ -6,7 +6,7 @@ sidebar_position: 4
 
 This guide covers how to deploy Composable UI to AWS Amplify
 
-##  Prerequisite
+##  Prerequisites
 
 - You'll need an AWS account, sign up here: https://aws.amazon.com/
 - You'll need to fork the Composable UI github repository.
@@ -15,16 +15,16 @@ This guide covers how to deploy Composable UI to AWS Amplify
 ## Create a new AWS Amplify app
 - Sign into your AWS console
 - Go to the  AWS Amplify service. It can be found by searching for "AWS Amplify" in the search bar.
-- Once in the AWS Ampliy dashboard, click on `Create new app`.
+- Once in the AWS Amplify dashboard, click on `Create new app`.
 
 ### Configure the new app
-- Select `Github` as the Git provider, and click `Next`.
+- Select `GitHub` as the Git provider, and click `Next`.
 - Select your Composable UI repository from the `Select a repository` search bar.
-   - Note: You may need to click on the `Update Github permissions` button to authorize AWS access to your desired github organization and specific github repository.
+   - Note: You may need to click on the `Update GitHub permissions` button to authorize AWS access to your desired github organization and specific github repository.
 - In `Select a branch`, select `main`.
 - Select the `My app is a monorepo` checkbox. 
 - Set the `Monorepo root directory` to `composable-ui`.
-- Click 'Next'
+- Click `Next`
 
 On the `App settings` screen:
 - Click `Edit YML file`, and paste the below yml file into the editor, then click `Save`:
@@ -53,7 +53,7 @@ applications:
     appRoot: composable-ui
 
 ```
-- The Environment Variables are configured in the the `Advanced Settings` section. We will skip this for now, and come back to this in a later step.
+- The Environment Variables are configured in the `Advanced Settings` section. We will skip this for now, and come back to this in a later step.
 - Click `Next`.
 - Click `Save and deploy`.
 
@@ -68,20 +68,20 @@ We need to obtain the domain that the app is being deployed on:
 ![image](/img/custom-domains.png)
 
 Now go to `Hosting` => `Environment variables`. We need to configure two environment variables for NextAuth.js:
-- Create environment variable `NEXTAUTH_URL` and paste in the value we copied earlier from the the Custom domains screen.
-- Create environment variable `NEXTAUTH_SECRET`. The is value is used by NextAuth.js to encrypt auth cookies. See the[ NextAuth.js docs](https://next-auth.js.org/configuration/options#nextauth_secret) for creating a strong secret. You can also set this to something like "changeme" and revisit this later on, prior to launching to production.
+- Create environment variable `NEXTAUTH_URL` and paste in the value we copied earlier from the Custom domains screen.
+- Create environment variable `NEXTAUTH_SECRET`. This value is used by NextAuth.js to encrypt auth cookies. See the[ NextAuth.js docs](https://next-auth.js.org/configuration/options#nextauth_secret) for creating a strong secret. You can also set this to something like "changeme" and revisit this later on, prior to launching to production.
 
 ### Redeploy
 
 After setting the `NEXTAUTH_URL` and `NEXTAUTH_SECRET` environment variables, the app is now ready to be redeployed:
 - Go to the  dashboard of your app, and click on the `main` deployment.
-- Click the `Redploy this version` button.
+- Click the `Redeploy this version` button.
 
 When the app finishes deployment, your Composable UI storefront is ready to use! Go back to the dashboard of your app, and click `Visit Deployed URL`. 
 
 ### Next steps
 
-Visit the [integrations guide](../integrations/overview.md) to setup additional features like product filtering, product promotions, content orchestration, and payments.
+Visit the [integrations guide](../integrations/overview.md) to set up additional features like product filtering, product promotions, content orchestration, and payments.
 
 
 
