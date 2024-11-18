@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Deploy to AWS Amplify
 
-This guide covers how to deploy Composable UI to AWS Amplify
+This guide covers how to deploy Composable UI to AWS Amplify.
 
 ##  Prerequisites
 
