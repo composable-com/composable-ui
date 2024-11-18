@@ -83,6 +83,9 @@ When the app finishes deployment, your Composable UI storefront is ready to use!
 
 Visit the [integrations guide](../integrations/overview.md) to set up additional features like product filtering, product promotions, content orchestration, and payments.
 
+## References
+
+- [AWS Amplify - Configuring monorepo build settings](https://docs.aws.amazon.com/amplify/latest/userguide/monorepo-configuration.html)
 
 
 

@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo 'node-linker=hoisted' >> .npmrc
+            - npm install -g pnpm
+            - pnpm install
+        build:
+          commands:
+            - env >> .env
+            - npx turbo run build --filter=composable-ui
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - $(pnpm store path)
+      buildPath: composable-ui
+    appRoot: composable-ui
