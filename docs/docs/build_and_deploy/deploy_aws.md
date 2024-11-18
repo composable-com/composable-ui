@@ -15,9 +15,11 @@ This guide covers how to deploy Composable UI to AWS Amplify
 ## Create a new AWS Amplify app
 - Sign into your AWS console
 - Go to the  AWS Amplify service. It can be found by searching for "AWS Amplify" in the search bar.
-- Once in the AWS Amplify dashboard, click on `Create new app`.
+- Once in the AWS Amplify dashboard, click on `Create new app`. Follow the steps below to configure the new app.
 
 ### Configure the new app
+
+#### Source Code setup
 - Select `GitHub` as the Git provider, and click `Next`.
 - Select your Composable UI repository from the `Select a repository` search bar.
    - Note: You may need to click on the `Update GitHub permissions` button to authorize AWS access to your desired github organization and specific github repository.
@@ -26,38 +28,24 @@ This guide covers how to deploy Composable UI to AWS Amplify
 - Set the `Monorepo root directory` to `composable-ui`.
 - Click `Next`
 
-On the `App settings` screen:
-- Click `Edit YML file`, and paste the below yml file into the editor, then click `Save`:
-```yml
-version: 1
-applications:
-  - frontend:
-      phases:
-        preBuild:
-          commands:
-            - echo 'node-linker=hoisted' >> .npmrc
-            - npm install -g pnpm
-            - pnpm install
-        build:
-          commands:
-            - env >> .env
-            - npx turbo run build --filter=composable-ui
-      artifacts:
-        baseDirectory: .next
-        files:
-          - '**/*'
-      cache:
-        paths:
-          - $(pnpm store path)
-      buildPath: composable-ui
-    appRoot: composable-ui
+#### App settings
 
-```
+On the `App settings` screen:
+- Set the desired `App name` for your Composable UI deployment. 
+- The build settings are automatically detected from the `amplify.yml` file.
 - The Environment Variables are configured in the `Advanced Settings` section. We will skip this for now, and come back to this in a later step.
 - Click `Next`.
-- Click `Save and deploy`.
+
+
+:::note
+The Composable UI repository contains an `amplify.yml` file, which provides AWS Amplify with the necessary build configuration to successfully build and deploy Composable UI. Refer to [Understanding the build specification](https://docs.aws.amazon.com/amplify/latest/userguide/yml-specification-syntax.html) to learn more about configuring the build.
+:::
+
+#### Review
+On the `Review` screen, click `Save and deploy`.
 
 The deployment will succeed, however, we now need to setup the [Environment Variables](#configure-environment-variables).
+
 
 ### Configure Environment Variables
 
@@ -76,6 +64,7 @@ Now go to `Hosting` => `Environment variables`. We need to configure two environ
 After setting the `NEXTAUTH_URL` and `NEXTAUTH_SECRET` environment variables, the app is now ready to be redeployed:
 - Go to the  dashboard of your app, and click on the `main` deployment.
 - Click the `Redeploy this version` button.
+   - Note: If a build is currently running from the inital deployment, cancel the build, and then click `Redploy this version`
 
 When the app finishes deployment, your Composable UI storefront is ready to use! Go back to the dashboard of your app, and click `Visit Deployed URL`. 
 
