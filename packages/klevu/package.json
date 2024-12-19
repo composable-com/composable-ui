@@ -5,7 +5,7 @@
   "types": "./index.ts",
   "sideEffects": "false",
   "scripts": {
-    "build": "echo \"Build script for @composable/stripe ...\"",
+    "build": "echo \"Build script for @composable/klevu ...\"",
     "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings 0",
     "ts": "tsc --noEmit --incremental",
     "copyfiles": "cd ../../composable-ui/ && cp -R node_modules/@klevu/ui/dist/klevu-ui/assets/ public/assets/ && mkdir -p src/components/klevu && cp ../packages/klevu/copythese/klevu.tsx src/components/klevu/klevu.tsx && cp ../packages/klevu/copythese/\\[slug\\].tsx src/pages/category/\\[slug\\].tsx && cp ../packages/klevu/copythese/search.tsx src/pages/search.tsx && cp ../packages/klevu/copythese/klevustyle.css src"
