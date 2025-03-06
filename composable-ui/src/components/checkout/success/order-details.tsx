@@ -53,13 +53,13 @@ export const OrderDetails = ({
             title={intl.formatMessage({
               id: 'checkout.success.orderDetails.confirmationEmail',
             })}
-            content={[confirmationEmailAddress]}
+            textContent={[confirmationEmailAddress]}
           />
           <InfoSection
             title={intl.formatMessage({
               id: 'checkout.success.orderDetails.orderDate',
             })}
-            content={[orderDate]}
+            textContent={[orderDate]}
           />
         </Stack>
 
@@ -75,7 +75,10 @@ export const OrderDetails = ({
               title={intl.formatMessage({
                 id: 'checkout.success.orderDetails.paymentMethod',
               })}
-              content={[paymentMethod?.line1 ?? '', paymentMethod?.line2 ?? '']}
+              textContent={[
+                paymentMethod?.line1 ?? '',
+                paymentMethod?.line2 ?? '',
+              ]}
               textTransform="capitalize"
             />
           </GridItem>
@@ -84,7 +87,7 @@ export const OrderDetails = ({
               title={intl.formatMessage({
                 id: 'checkout.success.orderDetails.billingAddress',
               })}
-              content={[
+              textContent={[
                 billing.name,
                 billing.addressLine1,
                 billing.addressLine2 ?? '',
@@ -96,7 +99,7 @@ export const OrderDetails = ({
               title={intl.formatMessage({
                 id: 'checkout.success.orderDetails.deliveryOption',
               })}
-              content={[deliveryMethod.line1, deliveryMethod.line2 ?? '']}
+              textContent={[deliveryMethod.line1, deliveryMethod.line2 ?? '']}
             />
           </GridItem>
           <GridItem gridArea="shippingAddress">
@@ -104,7 +107,7 @@ export const OrderDetails = ({
               title={intl.formatMessage({
                 id: 'checkout.success.orderDetails.shippingAddress',
               })}
-              content={[
+              textContent={[
                 shipping.name,
                 shipping.addressLine1,
                 shipping.addressLine2 ?? '',
@@ -119,12 +122,12 @@ export const OrderDetails = ({
 
 interface InfoSectionProps extends TextProps {
   title: string
-  content: string[]
+  textContent: string[]
 }
 
 export const InfoSection = ({
   title,
-  content,
+  textContent,
   ...textProps
 }: InfoSectionProps) => {
   return (
@@ -132,7 +135,7 @@ export const InfoSection = ({
       <Text fontSize="sm" fontWeight="extrabold" {...textProps}>
         {title}
       </Text>
-      {content.map((c) => (
+      {textContent.map((c) => (
         <Text {...textProps} key={c} fontSize="sm">
           {c}
         </Text>
