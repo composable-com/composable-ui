@@ -271,5 +271,23 @@
   "category.algolia.setup.instructions.replicasSorting": "For each replica, configure sorting to match the name of the index. Go to Configuration -> RELEVANCE ESSENTIALS -> Ranking and Sorting, select '+ Add sort-by attribute', type the field name and then select Ascending or Descending sort.",
   "category.algolia.setup.instructions.createDifferentSorting": "Note that you can create different sorting options, but you'll have to modify the ALGOLIA_SORTING_OPTIONS constant in the application.",
 
-  "category.algolia.setup.instructions.addEnvVarsToThisApp": "Finally, add the following environment variables to this application's .env file"
+  "category.algolia.setup.instructions.addEnvVarsToThisApp": "Finally, add the following environment variables to this application's .env file",
+
+  "wishlist.title": "My Wishlist",
+  "wishlist.titleCount.singular": "1 item",
+  "wishlist.titleCount.plural": "{count} items",
+  "wishlist.empty.title": "Your wishlist is empty",
+  "wishlist.empty.description": "Add items to your wishlist to save them for later",
+  "wishlist.empty.continueShopping": "Continue Shopping",
+  "wishlist.item.quantity": "Quantity",
+  "wishlist.item.price": "Price",
+  "wishlist.item.totalPrice": "Total",
+  "wishlist.linkCopied": "Link copied to clipboard",
+  "wishlist.copyLink": "Copy link",
+  "wishlist.create.title": "Create New Wishlist",
+  "wishlist.create.nameLabel": "Wishlist Name",
+  "wishlist.create.nameRequired": "Please enter a name for your wishlist",
+  "wishlist.create.submit": "Create Wishlist",
+  "wishlist.createSuccess": "Wishlist created successfully",
+  "wishlist.addSuccess": "Item added to wishlist successfully"
 }

@@ -1,0 +1,6 @@
+// Export all wishlist procedures
+export * from './get-wishlist'
+export * from './create-wishlist'
+export * from './add-wishlist-item'
+export * from './remove-wishlist-item'
+export * from './delete-wishlist'

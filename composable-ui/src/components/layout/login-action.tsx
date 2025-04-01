@@ -7,7 +7,8 @@ import { getInitials } from 'utils/get-initials'
 
 export const LoginAction = (props: { rootProps?: BoxProps }) => {
   const intl = useIntl()
-  const { data: session } = useSession()
+  const ss = useSession()
+  const { data: session } = ss
   const { accountDrawer, menuDrawer } = useComposable()
   const userName = session?.loggedIn
     ? getInitials(session?.user?.name ?? '')

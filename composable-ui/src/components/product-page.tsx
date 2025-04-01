@@ -3,27 +3,51 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import { useIntl } from 'react-intl'
 import { Accordion, AlertBox, Gallery, PdpLayout } from '@composable/ui'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Box, Button, HStack, Text } from '@chakra-ui/react'
 
 import { APP_CONFIG } from 'utils/constants'
 import { api } from 'utils/api'
-import { useCart, useToast } from 'hooks'
+import { useCart, useToast, useWishlist } from 'hooks'
 import { Price } from './price'
 import { QuantityPicker } from './quantity-picker'
 import { Breadcrumb } from './product'
 import { pdpAccordionData } from './product/__data__/product-accordion-data'
+import { useSession } from 'next-auth/react'
 
 const DynamicNoMatchPage = dynamic(() =>
   import('./no-match-page').then((_module) => _module.NoMatchPage)
 )
 
 export const ProductPage = () => {
+  const { data: session } = useSession()
   const router = useRouter()
   const intl = useIntl()
   const toast = useToast()
   const { data: product, isLoading } = api.commerce.getProductBy.useQuery({
     slug: `${router.query.slug}`,
+  })
+  // const userId = session?.data?.id as string;
+  const [userId, setUserId] = useState(session?.data?.id)
+  const { addWishlistItem, wishlist } = useWishlist(userId, {
+    onWishlistItemAddError: () => {
+      toast({
+        status: 'error',
+        description: intl.formatMessage({
+          id: 'app.failure',
+        }),
+      })
+    },
+    onWishlistItemAddSuccess: () => {
+      toast({
+        status: 'success',
+        title: intl.formatMessage({ id: 'wishlist.title' }),
+        description: intl.formatMessage(
+          { id: 'wishlist.addSuccess' },
+          { name: product?.name ?? '' }
+        ),
+      })
+    },
   })
 
   // TODO: breadcrumb data should come from product
@@ -67,6 +91,40 @@ export const ProductPage = () => {
       quantity: quantity,
     })
   }
+
+  const handleAddToWishlist = async () => {
+    debugger
+    if (!product?.id) {
+      return
+    }
+    try {
+      await addWishlistItem({
+        // wishlistId: wishlist.id,
+        productId: product.id,
+        name: product.name,
+        brand: product.brand,
+        sku: product.sku,
+        type: product.type,
+        price: product.price,
+        image: product.images[0],
+        slug: product.slug,
+      })
+    } catch (error) {
+      console.error('Failed to add item to wishlist:', error)
+      toast({
+        status: 'error',
+        description: intl.formatMessage({
+          id: 'app.failure',
+        }),
+      })
+    }
+  }
+
+  useEffect(() => {
+    if (session?.user?.email) {
+      setUserId(session?.user?.email)
+    }
+  }, [session])
 
   if (isLoading) {
     return null
@@ -114,13 +172,8 @@ export const ProductPage = () => {
       price={<Price price={product.price.toString()} />}
       main={
         <>
-          <HStack
-            spacing={{ base: '4', md: '8' }}
-            mt={4}
-            align="flex-end"
-            justify="space-evenly"
-          >
-            <Box flex="1">
+          <HStack spacing={{ base: '4', md: '6' }} mt={4} align="flex-end">
+            <Box width="150px">
               <QuantityPicker
                 value={quantity}
                 onChange={(val) => setQuantity(val)}
@@ -132,14 +185,25 @@ export const ProductPage = () => {
               />
             </Box>
             <Box flex="1">
-              <Button
-                size={'lg'}
-                width={'full'}
-                onClick={() => handleAddToCart()}
-                isLoading={addCartItem.isLoading}
-              >
-                {intl.formatMessage({ id: 'action.addToCart' })}
-              </Button>
+              <HStack spacing="4">
+                <Button
+                  size={'lg'}
+                  width={'full'}
+                  onClick={() => handleAddToCart()}
+                  isLoading={addCartItem.isLoading}
+                >
+                  {intl.formatMessage({ id: 'action.addToCart' })}
+                </Button>
+                <Button
+                  size={'lg'}
+                  width={'full'}
+                  variant="outline"
+                  onClick={() => handleAddToWishlist()}
+                  isDisabled={!product}
+                >
+                  {intl.formatMessage({ id: 'action.addToWishlist' })}
+                </Button>
+              </HStack>
             </Box>
           </HStack>
           <AlertBox

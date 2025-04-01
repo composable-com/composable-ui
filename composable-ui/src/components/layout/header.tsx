@@ -9,20 +9,34 @@ import {
   Flex,
   Grid,
   Link,
+  IconButton,
+  Tooltip,
 } from '@chakra-ui/react'
 import { LoginAction } from './login-action'
 import { cmsNavLinks } from './_data'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, StarIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 import { MenuItem } from 'components/menu/menu-item'
 import NextLink from 'next/link'
+import { useSession } from 'next-auth/react'
 
 export const Header = () => {
   const { cart } = useCart()
   const { cartDrawer, menuDrawer } = useComposable()
+  const session = useSession()
+  const router = useRouter()
   const {
     query: { slug },
-  } = useRouter()
+  } = router
+
+  const handleWishlistClick = () => {
+    if (session.status === 'authenticated') {
+      router.push('/wishlist/new')
+    } else {
+      // Show login prompt
+      // TODO: Implement login prompt
+    }
+  }
 
   return (
     <Box as="header" borderBottomWidth="1px" height={'4rem'}>
@@ -85,6 +99,17 @@ export const Header = () => {
             <Box display={{ base: 'none', md: 'flex' }}>
               <LoginAction />
             </Box>
+            <Tooltip label="My Wishlist">
+              <IconButton
+                aria-label="My Wishlist"
+                icon={<StarIcon />}
+                variant="unstyled"
+                onClick={handleWishlistClick}
+                color={
+                  session.status === 'authenticated' ? 'yellow.400' : 'gray.400'
+                }
+              />
+            </Tooltip>
             <Button
               variant="unstyled"
               aria-label={`${cart.quantity} items in your shopping cart`}

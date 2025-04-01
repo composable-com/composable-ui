@@ -7,6 +7,8 @@ import {
   User,
   Product,
   SitemapField,
+  Wishlist,
+  WishlistItem,
 } from './index'
 
 export interface CommerceService {
@@ -85,4 +87,40 @@ export interface CommerceService {
   }): Promise<User | null>
 
   resetPassword(params: { email: string }): Promise<void>
+
+  /**
+   * Wishlist methods
+   */
+
+  getWishlist(params: { userId: string }): Promise<Wishlist | null>
+
+  createWishlist(params: {
+    wishlistId: string
+    userId: string
+    name: string
+    items: Omit<WishlistItem, 'id'>[]
+  }): Promise<Wishlist>
+
+  addWishlistItem(params: {
+    wishlistId: string
+    userId: string
+    productId: string
+    name: string
+    brand: string
+    sku: string
+    type: string
+    price: number
+    image: {
+      url: string
+      alt?: string
+    }
+    slug: string
+  }): Promise<Wishlist>
+
+  removeWishlistItem(params: {
+    userId: string
+    itemId: string
+  }): Promise<Wishlist>
+
+  deleteWishlist(params: { userId: string }): Promise<boolean>
 }

@@ -1,6 +1,7 @@
 import { FormatNumberOptions, useIntl } from 'react-intl'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
+import { useSession } from 'next-auth/react'
 import {
   Box,
   Container,
@@ -12,14 +13,18 @@ import {
 } from '@chakra-ui/react'
 
 import { APP_CONFIG } from '../../utils/constants'
-import { useCart, useToast } from 'hooks'
+import { useCart, useToast, useWishlist } from 'hooks'
 import { HorizontalProductCard } from '@composable/ui'
 import { CartEmptyState, CartLoadingState, CartSummary, CartTotal } from '.'
+import type { CartItem } from '@composable/types'
 
 export const CartPage = () => {
   const router = useRouter()
   const intl = useIntl()
   const toast = useToast()
+  const { data: session } = useSession()
+  const userId = session?.user?.email || undefined
+
   const { cart, updateCartItem, deleteCartItem } = useCart({
     onCartItemUpdateError: () => {
       toast({
@@ -28,6 +33,21 @@ export const CartPage = () => {
       })
     },
     onCartItemDeleteError: () => {
+      toast({
+        status: 'error',
+        description: intl.formatMessage({ id: 'app.failure' }),
+      })
+    },
+  })
+
+  const { addWishlistItem, wishlist, createWishlist } = useWishlist(userId, {
+    onWishlistItemAddSuccess: () => {
+      toast({
+        status: 'success',
+        description: intl.formatMessage({ id: 'wishlist.addSuccess' }),
+      })
+    },
+    onWishlistItemAddError: () => {
       toast({
         status: 'error',
         description: intl.formatMessage({ id: 'app.failure' }),
@@ -44,6 +64,35 @@ export const CartPage = () => {
   const currencyFormatConfig: FormatNumberOptions = {
     currency: APP_CONFIG.CURRENCY_CODE,
     style: 'currency',
+  }
+
+  const handleAddToWishlist = async (item: CartItem) => {
+    let currentWishlist = wishlist
+
+    if (!currentWishlist) {
+      // Create a new wishlist if none exists
+      currentWishlist = await new Promise((resolve) => {
+        createWishlist('My Wishlist', {
+          onSuccess: (newWishlist) => resolve(newWishlist),
+        })
+      })
+    }
+
+    if (!currentWishlist) return
+
+    await addWishlistItem({
+      wishlistId: currentWishlist.id,
+      productId: item.id,
+      name: item.name,
+      brand: item.brand,
+      sku: item.sku,
+      type: item.type,
+      price: item.price,
+      image: item.image,
+      slug: item.slug,
+    })
+    // Optionally remove from cart after adding to wishlist
+    deleteCartItem.mutate({ itemId: item.id })
   }
 
   return (
@@ -139,19 +188,16 @@ export const CartPage = () => {
                             id: 'cart.item.totalPrice',
                           }),
                           remove: intl.formatMessage({ id: 'action.remove' }),
-                          addToWishlist:
-                            productCartSize === 'lg'
-                              ? ''
-                              : intl.formatMessage({
-                                  id: 'action.moveToWishlist',
-                                }),
+                          addToWishlist: intl.formatMessage({
+                            id: 'action.moveToWishlist',
+                          }),
                         }}
                         quantity={item.quantity}
                         regularPrice={intl.formatNumber(
                           item.price,
                           currencyFormatConfig
                         )}
-                        onAddToWishlist={() => null}
+                        onAddToWishlist={() => handleAddToWishlist(item)}
                         onRemove={() => {
                           deleteCartItem.mutate({ itemId: item.id })
                         }}
