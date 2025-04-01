@@ -197,6 +197,12 @@ export const WishlistPage = ({
                         productId: item.id,
                         quantity: 1,
                       })
+                      if (editable) {
+                        removeWishlistItem({
+                          userId: session?.user?.email || '',
+                          itemId: item.id,
+                        })
+                      }
                     }}
                     onRemove={
                       editable

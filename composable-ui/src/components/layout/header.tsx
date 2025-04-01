@@ -31,7 +31,7 @@ export const Header = () => {
 
   const handleWishlistClick = () => {
     if (session.status === 'authenticated') {
-      router.push('/wishlist/new')
+      router.push('/wishlist')
     } else {
       // Show login prompt
       // TODO: Implement login prompt
