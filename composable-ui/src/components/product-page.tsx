@@ -27,8 +27,7 @@ export const ProductPage = () => {
   const { data: product, isLoading } = api.commerce.getProductBy.useQuery({
     slug: `${router.query.slug}`,
   })
-  // const userId = session?.data?.id as string;
-  const [userId, setUserId] = useState(session?.data?.id)
+  const [userId, setUserId] = useState(session?.user?.email || undefined)
   const { addWishlistItem, wishlist } = useWishlist(userId, {
     onWishlistItemAddError: () => {
       toast({
@@ -171,8 +170,8 @@ export const ProductPage = () => {
       price={<Price price={product.price.toString()} />}
       main={
         <>
-          <HStack spacing={{ base: '4', md: '6' }} mt={4} align="flex-end">
-            <Box width="150px">
+          <Box mt={4}>
+            <Box mb={4}>
               <QuantityPicker
                 value={quantity}
                 onChange={(val) => setQuantity(val)}
@@ -183,28 +182,26 @@ export const ProductPage = () => {
                 }}
               />
             </Box>
-            <Box flex="1">
-              <HStack spacing="4">
-                <Button
-                  size={'lg'}
-                  width={'full'}
-                  onClick={() => handleAddToCart()}
-                  isLoading={addCartItem.isLoading}
-                >
-                  {intl.formatMessage({ id: 'action.addToCart' })}
-                </Button>
-                <Button
-                  size={'lg'}
-                  width={'full'}
-                  variant="outline"
-                  onClick={() => handleAddToWishlist()}
-                  isDisabled={!product}
-                >
-                  {intl.formatMessage({ id: 'action.addToWishlist' })}
-                </Button>
-              </HStack>
-            </Box>
-          </HStack>
+            <HStack spacing="4" alignItems="stretch" width="100%">
+              <Button
+                size={'lg'}
+                flex={1}
+                onClick={() => handleAddToCart()}
+                isLoading={addCartItem.isLoading}
+              >
+                {intl.formatMessage({ id: 'action.addToCart' })}
+              </Button>
+              <Button
+                size={'lg'}
+                flex={1}
+                variant="outline"
+                onClick={() => handleAddToWishlist()}
+                isDisabled={!product}
+              >
+                {intl.formatMessage({ id: 'action.addToWishlist' })}
+              </Button>
+            </HStack>
+          </Box>
           <AlertBox
             rootProps={{
               borderRadius: '0.375rem',
