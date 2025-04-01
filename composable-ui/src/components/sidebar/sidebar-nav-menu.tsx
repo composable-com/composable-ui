@@ -79,7 +79,7 @@ export const SideBarNavMenu = ({ activeItem }: SideBarNavMenuProps) => {
         <SidebarItem
           key={`${item.path}`}
           label={intl.formatMessage({ id: item.intlId })}
-          href={'/#'}
+          href={item.path}
           state={item.path === activeItem?.path ? 'Active' : 'Default'}
           rootProps={{
             leftIcon: item.icon,
