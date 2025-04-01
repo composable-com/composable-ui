@@ -93,7 +93,6 @@ export const ProductPage = () => {
   }
 
   const handleAddToWishlist = async () => {
-    debugger
     if (!product?.id) {
       return
     }

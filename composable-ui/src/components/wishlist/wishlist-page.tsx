@@ -18,7 +18,7 @@ import { FormatNumberOptions, useIntl } from 'react-intl'
 
 import type { WishlistItem } from '@composable/types'
 import { HorizontalProductCard } from '@composable/ui'
-import { useToast, useWishlist } from 'hooks'
+import { useToast, useWishlist, useCart } from 'hooks'
 import { useEffect, useState } from 'react'
 import { APP_CONFIG } from '../../utils/constants'
 import { WishlistEmptyState } from './wishlist-empty-state'
@@ -48,6 +48,27 @@ export const WishlistPage = ({
       },
     }
   )
+
+  const { addCartItem } = useCart({
+    onCartItemAddError: () => {
+      toast({
+        status: 'error',
+        description: intl.formatMessage({
+          id: 'app.failure',
+        }),
+      })
+    },
+    onCartItemAddSuccess: () => {
+      toast({
+        status: 'success',
+        title: intl.formatMessage({ id: 'cart.title' }),
+        description: intl.formatMessage(
+          { id: 'cart.item.add.success' },
+          { name: '' }
+        ),
+      })
+    },
+  })
 
   const title = wishlist?.name || intl.formatMessage({ id: 'wishlist.title' })
   const productWishlistSize: 'sm' | 'lg' | undefined = useBreakpointValue({
@@ -139,7 +160,7 @@ export const WishlistPage = ({
                     key={item.id}
                     brand={item.brand}
                     columns={4}
-                    editable
+                    editable={editable}
                     details={[
                       { name: 'SKU', value: item.sku, id: item.id },
                       { name: 'Type', value: item.type, id: item.id },
@@ -171,14 +192,23 @@ export const WishlistPage = ({
                       item.price,
                       currencyFormatConfig
                     )}
-                    onAddToWishlist={() => null}
-                    onRemove={() => {
-                      removeWishlistItem({
-                        userId: session?.user?.email || '',
-                        itemId: item.id,
+                    onAddToWishlist={() => {
+                      addCartItem.mutate({
+                        productId: item.id,
+                        quantity: 1,
                       })
                     }}
-                    onChangeQuantity={() => null}
+                    onRemove={
+                      editable
+                        ? () => {
+                            removeWishlistItem({
+                              userId: session?.user?.email || '',
+                              itemId: item.id,
+                            })
+                          }
+                        : undefined
+                    }
+                    onChangeQuantity={editable ? () => null : undefined}
                     isLoading={false}
                   />
                 </Box>

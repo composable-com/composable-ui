@@ -49,13 +49,11 @@ export const useWishlist = (userId?: string, options?: UseWishlistOptions) => {
     ['wishlistCreate'],
     async (name: string) => {
       if (!userId) throw new Error('User not authenticated')
-      debugger
       const response = await client.commerce.createWishlist.mutate({
         userId: userId,
         name,
         items: [],
       })
-      debugger
       return response
     }
   )
@@ -78,9 +76,7 @@ export const useWishlist = (userId?: string, options?: UseWishlistOptions) => {
       }
       slug: string
     }) => {
-      debugger
       if (!userId) {
-        debugger
         throw 'no user id error'
       }
       const response = await client.commerce.addWishlistItem.mutate({
