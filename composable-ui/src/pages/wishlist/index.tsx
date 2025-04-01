@@ -9,7 +9,6 @@ export default function Wishlist() {
   const wishlistId = session?.user?.email || ''
   // Redirect to login if not authenticated
   useEffect(() => {
-    console.log('martin - status', status)
     if (status === 'unauthenticated') {
       router.push('/login')
     }
@@ -23,5 +22,5 @@ export default function Wishlist() {
     return null
   }
 
-  return <WishlistPage wishlistId={wishlistId} />
+  return <WishlistPage editable={true} wishlistId={wishlistId} />
 }

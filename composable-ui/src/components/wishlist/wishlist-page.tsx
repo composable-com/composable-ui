@@ -1,34 +1,41 @@
-import { FormatNumberOptions, useIntl } from 'react-intl'
-import { useRouter } from 'next/router'
-import { NextSeo } from 'next-seo'
-import { useSession } from 'next-auth/react'
+import { CopyIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
   Divider,
   Flex,
+  IconButton,
+  Input,
   Stack,
   Text,
-  useBreakpointValue,
-  Input,
-  IconButton,
   Tooltip,
+  useBreakpointValue,
 } from '@chakra-ui/react'
-import { CopyIcon } from '@chakra-ui/icons'
+import { useSession } from 'next-auth/react'
+import { NextSeo } from 'next-seo'
+import { useRouter } from 'next/router'
+import { FormatNumberOptions, useIntl } from 'react-intl'
 
-import { APP_CONFIG } from '../../utils/constants'
-import { useWishlist, useToast } from 'hooks'
+import type { WishlistItem } from '@composable/types'
 import { HorizontalProductCard } from '@composable/ui'
+import { useToast, useWishlist } from 'hooks'
+import { useEffect, useState } from 'react'
+import { APP_CONFIG } from '../../utils/constants'
 import { WishlistEmptyState } from './wishlist-empty-state'
 import { WishlistLoadingState } from './wishlist-loading-state'
-import type { Wishlist, WishlistItem } from '@composable/types'
-import { useEffect, useState } from 'react'
 
-export const WishlistPage = ({ wishlistId }: { wishlistId: string }) => {
+export const WishlistPage = ({
+  wishlistId,
+  editable,
+}: {
+  wishlistId: string
+  editable: boolean
+}) => {
   const router = useRouter()
   const intl = useIntl()
   const toast = useToast()
   const { data: session } = useSession()
+  const [shareUrl, setShareURL] = useState('')
 
   const { wishlist, removeWishlistItem, isLoading, isEmpty } = useWishlist(
     wishlistId,
@@ -41,7 +48,7 @@ export const WishlistPage = ({ wishlistId }: { wishlistId: string }) => {
       },
     }
   )
-  console.log('martin - wishlist', wishlist)
+
   const title = wishlist?.name || intl.formatMessage({ id: 'wishlist.title' })
   const productWishlistSize: 'sm' | 'lg' | undefined = useBreakpointValue({
     base: 'sm',
@@ -53,7 +60,6 @@ export const WishlistPage = ({ wishlistId }: { wishlistId: string }) => {
   }
 
   // const shareUrl =
-  const [shareUrl, setShareURL] = useState('')
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(shareUrl)
@@ -64,8 +70,9 @@ export const WishlistPage = ({ wishlistId }: { wishlistId: string }) => {
   }
 
   useEffect(() => {
-    console.log('martin wishlist', wishlist)
-    window && setShareURL(`${window.location.origin}/wishlist/${wishlistId}`)
+    editable &&
+      window &&
+      setShareURL(`${window.location.origin}/wishlist/${wishlistId}`)
   }, [wishlist])
 
   return (
@@ -99,17 +106,18 @@ export const WishlistPage = ({ wishlistId }: { wishlistId: string }) => {
         </Text>
       </Flex>
 
-      <Flex mb={4} gap={2}>
-        <Input value={shareUrl} isReadOnly />
-        <Tooltip label={intl.formatMessage({ id: 'wishlist.copyLink' })}>
-          <IconButton
-            aria-label="Copy link"
-            icon={<CopyIcon />}
-            onClick={copyToClipboard}
-          />
-        </Tooltip>
-      </Flex>
-
+      {editable && (
+        <Flex mb={4} gap={2}>
+          <Input value={shareUrl} isReadOnly />
+          <Tooltip label={intl.formatMessage({ id: 'wishlist.copyLink' })}>
+            <IconButton
+              aria-label="Copy link"
+              icon={<CopyIcon />}
+              onClick={copyToClipboard}
+            />
+          </Tooltip>
+        </Flex>
+      )}
       {isLoading && <WishlistLoadingState />}
       {!isLoading && isEmpty && <WishlistEmptyState />}
       {!isLoading && !isEmpty && (

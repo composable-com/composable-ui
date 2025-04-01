@@ -20,7 +20,6 @@ interface UseWishlistOptions {
 export const useWishlist = (userId?: string, options?: UseWishlistOptions) => {
   // const session = useSession();
   // const userId = session?.data?.id || '' as string;
-  console.log('martin userId', userId)
   const queryClient = useQueryClient()
   const { client } = api.useContext()
   const optionsRef = useRef(options)
@@ -127,8 +126,6 @@ export const useWishlist = (userId?: string, options?: UseWishlistOptions) => {
   // )
 
   const data = useMemo(() => {
-    console.log('martin - memo - wishlist', wishlist)
-
     return {
       wishlist,
       isLoading: status === 'loading',

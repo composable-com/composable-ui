@@ -6,6 +6,5 @@ export const getWishlist = protectedProcedure
   .input(z.object({ userId: z.string() }))
   .query(async ({ input }) => {
     const ret = await commerce.getWishlist({ ...input })
-    console.log('martin ret', ret)
     return ret
   })

@@ -1,22 +1,11 @@
 import { WishlistPage } from 'components/wishlist'
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { createServerApp } from 'server/isr/server-app'
+import { useRouter } from 'next/router'
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const { ssg } = await createServerApp({ context })
-  return {
-    props: {
-      trpcState: ssg.dehydrate(),
-    },
-    revalidate: 1,
-  }
+const Page = () => {
+  const router = useRouter()
+  const { wishlistId } = router.query
+  debugger
+  return <WishlistPage editable={false} wishlistId={wishlistId as string} />
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: 'blocking',
-  }
-}
-
-export default WishlistPage
+export default Page

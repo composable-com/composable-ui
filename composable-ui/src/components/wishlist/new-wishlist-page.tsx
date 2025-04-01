@@ -38,8 +38,8 @@ export const NewWishlistPage = () => {
   const onSubmit = async (data: FormData) => {
     try {
       const wishlist = await createWishlist(data.name)
-      console.log('martin created wishlist', wishlist)
-      router.push(`/wishlist/${wishlist.id}`)
+
+      router.push(`/wishlist/${wishlist.wishlistId}`)
       toast({
         status: 'success',
         description: intl.formatMessage({ id: 'wishlist.createSuccess' }),

@@ -44,14 +44,11 @@ export const deleteCart = async (cartId: string) => {
 export const getWishlist = async (
   wishlistId: string
 ): Promise<Wishlist | undefined> => {
-  console.log('martin getWishlist -- input', wishlistId)
   const resp = await storage.getItem(`wishlist-${wishlistId}`)
-  console.log('martin storage', resp)
   return resp
 }
 
 export const saveWishlist = async (wishlist: Wishlist) => {
-  console.log('martin saving wishlist', wishlist.wishlistId)
   await storage.setItem(`wishlist-${wishlist.wishlistId}`, wishlist)
   return wishlist
 }
@@ -87,9 +84,7 @@ export const createWishlist = async ({
     createdAt: Date.now(),
     updatedAt: Date.now(),
   }
-  console.log('createWishlist result 1', wishlist)
   const save = await saveWishlist(wishlist)
-  console.log('createWishlist result 2', save)
   return save
 }
 
@@ -119,13 +114,10 @@ export const addWishlistItem = async ({
   }
   slug: string
 }) => {
-  console.log('MARTIN ADD WISHLIST ITEM - wishlistId', wishlistId)
-  console.log('MARTIN ADD WISHLIST ITEM - userId', userId)
   if (!wishlistId) {
     throw new Error('Wishlist ID is required')
   }
   let wishlist = await getWishlist(wishlistId)
-  console.log('martin addWishlistItem wishlist', wishlist)
   if (!wishlist) {
     wishlist = await createWishlist({
       userId: userId,

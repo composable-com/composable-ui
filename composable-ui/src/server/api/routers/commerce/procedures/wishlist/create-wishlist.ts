@@ -25,8 +25,6 @@ export const createWishlist = protectedProcedure
     })
   )
   .mutation(async ({ input }) => {
-    console.log('martin 33 input', input)
     const result = await commerce.createWishlist({ ...input })
-    console.log('martin 35 result', result)
     return result
   })
