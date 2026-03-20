@@ -1,7 +1,7 @@
 
 # Voucherify Integration
 
-Voucherify is an API-first Promotions and Loyalty Engine that helps brands run personalised coupons, gift cards, auto-applied promotions, loyalty programs, and referral campaigns. This integration focuses on educating people about using Voucherify in composable commerce to enhance advanced promotions capabilities.
+Voucherify is the Incentive Optimization Engine for modern growth teams. Instead of static, generic promotions, it enables always-on experimentation with incentives, powered by flexible rules, built-in guardrails, and real-time APIs that connect to marketing automation and commerce platforms.
 
 ## Integration architecture
 
